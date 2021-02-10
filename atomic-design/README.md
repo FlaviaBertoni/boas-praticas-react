@@ -32,6 +32,11 @@ Cada átomo de interface possui suas próprias propriedades exclusivas, como as 
 
 ### Moléculas
 
-São grupos relativamente simples de elementos da interface que funcionam juntos como uma unidade. Por exemplo um campo de busca que combina as molécuas de `<label>`, `<input>` e `<button>`.  
+Moleculas são basicamente agrupamentos de um ou mais átomos que funcionam juntos como uma unidade. Por exemplo um campo de busca que combina as molécuas de `<label>`, `<input>` e `<button>`.  
 
 ### Organismos
+
+Organismos são componentes de interface relativamente complexos compostos por grupos de moléculas e/ou átomos e/ou outros organismos. Esses organismos formam seções distintas de uma interface, como `header`, `footer` ou um `sidebar`, por exemplo.
+
+### Template
+
