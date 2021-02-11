@@ -38,5 +38,12 @@ Moleculas são basicamente agrupamentos de um ou mais átomos que funcionam junt
 
 Organismos são componentes de interface relativamente complexos compostos por grupos de moléculas e/ou átomos e/ou outros organismos. Esses organismos formam seções distintas de uma interface, como `header`, `footer` ou um `sidebar`, por exemplo.
 
-### Template
+### Templates
 
+Os Templates consistem principalmente de grupos de organismos estruturados juntos para formar páginas.
+
+É aqui que começamos a ver coisas como layout em ação. Semelhante a um Wireframe, é aqui por exemplo, onde aplicamos os skeletons/Shimmer (placeholders de conteúdo).
+
+### Páginas
+
+Páginas são instâncias específicas de templates. Aqui, o espaço reservado para o conteudo é substituído pelo conteúdo (representativo) real para fornecer uma representação precisa do que o usuário verá.
