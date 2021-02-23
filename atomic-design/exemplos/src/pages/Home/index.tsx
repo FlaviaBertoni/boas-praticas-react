@@ -1,9 +1,13 @@
-import React from "react";
-import Field from "../../components/atoms/Field";
+import React from 'react';
+import { Label } from '../../components/atoms/Label';
 
 const Home: React.FC = () => {
   return (
-    <Field type="text" name="search" label="Pesquisar: " labelPosition="top" />
+    <>
+      <Label size="small" color="primary" weight="400">
+        Home
+      </Label>
+    </>
   );
 };
 

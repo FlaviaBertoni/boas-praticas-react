@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   * {
@@ -13,7 +13,7 @@ export default createGlobalStyle`
   }
 
   body {
-    font: 16px 'Roboto', sans-serif;
+    font: 14px 'Roboto', sans-serif;
     background: #F1F1F1;
     color: #333;
     -webkit-font-smoothing: antialiased;
