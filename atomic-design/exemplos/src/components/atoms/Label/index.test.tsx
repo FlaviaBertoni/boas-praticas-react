@@ -11,7 +11,10 @@ const weights = ['normal', 'bold'];
 
 const matriz: Array<Array<String>> = [];
 
-// Just for testing purpose
+/*
+ * Just for test purposes.
+ * Only will work ordered with the biggest to the smallest array.
+ */
 colors.map(color => sizes.map(size => weights.map(weight => matriz.push([size, weight, color]))));
 
 describe('Test case for Label component', () => {
