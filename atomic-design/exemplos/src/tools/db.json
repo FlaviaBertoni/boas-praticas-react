@@ -1,0 +1,64 @@
+{
+  "vehicles": [
+    {
+      "id": "1",
+      "model": "K.I.T.T",
+      "price": 42,
+      "transmisstion": "Manual",
+      "seats": 4,
+      "fuel_efficiency": 14.8,
+      "efficiency_unit": "km",
+      "image": "/images/cars/KITT.png"
+    },
+    {
+      "id": "2",
+      "model": "Ecto-1",
+      "price": 52,
+      "transmisstion": "Manual",
+      "seats": 4,
+      "fuel_efficiency": 7,
+      "efficiency_unit": "km",
+      "image": "/images/cars/ecto-1.png"
+    },
+    {
+      "id": "3",
+      "model": "DeLorean",
+      "price": 52,
+      "transmisstion": "Manual",
+      "seats": 4,
+      "fuel_efficiency": 12.8,
+      "efficiency_unit": "km",
+      "image": "/images/cars/delorean.png"
+    },
+    {
+      "id": "4",
+      "model": "Bat Móvel",
+      "price": 42,
+      "transmisstion": "Auto",
+      "seats": 2,
+      "fuel_efficiency": 5.8,
+      "efficiency_unit": "km",
+      "image": "/images/cars/Batmovel.png"
+    },
+    {
+      "id": "5",
+      "model": "Herbie",
+      "price": 79,
+      "transmisstion": "Manual",
+      "seats": 4,
+      "fuel_efficiency": 15.6,
+      "efficiency_unit": "km",
+      "image": "/images/cars/herbie.png"
+    },
+    {
+      "id": "6",
+      "model": "The Mistery Machibne",
+      "price": 79,
+      "transmisstion": "Auto",
+      "seats": 4,
+      "fuel_efficiency": 10.7,
+      "efficiency_unit": "km",
+      "image": "/images/cars/TheMysteryMachine.png"
+    }
+  ]
+}
