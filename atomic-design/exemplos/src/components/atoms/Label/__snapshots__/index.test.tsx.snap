@@ -1,0 +1,1366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test case for Label component should be able to render the Label component for black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+}
+
+<div>
+  <label
+    class="c0"
+    color="black"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component for dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  color: #2C2E33;
+  font-weight: normal;
+}
+
+<div>
+  <label
+    class="c0"
+    color="dark"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component for disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  color: #747A88;
+  font-weight: normal;
+}
+
+<div>
+  <label
+    class="c0"
+    color="disable"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component for primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  color: #7E7EB8;
+  font-weight: normal;
+}
+
+<div>
+  <label
+    class="c0"
+    color="primary"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component for white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+}
+
+<div>
+  <label
+    class="c0"
+    color="white"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 400 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 400 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 400 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 400 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 400 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 700 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 700 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 700 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 700 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, 700 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 48px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 400 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 400 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 400 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 400 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 400 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 700 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 700 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 700 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 700 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, 700 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, bold weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, bold weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, bold weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, bold weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, bold weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, normal weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, normal weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, normal weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, normal weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, normal weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 36px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 400 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 400 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 400 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 400 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 400 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 700 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 700 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 700 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 700 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, 700 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 24px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 400 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 400 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 400 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 400 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 400 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="400"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 700 weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 700 weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 700 weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 700 weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, 700 weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="700"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, bold weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, bold weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, bold weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, bold weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, bold weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, normal weight, black color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: black;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, normal weight, dark color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: dark;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, normal weight, disable color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: disable;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, normal weight, primary color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: primary;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, normal weight, white color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 16px;
+  font-weight: white;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
