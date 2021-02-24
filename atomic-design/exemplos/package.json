@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start:api": "npx json-server --port=3333 --delay=1000 ./src/tools/db.json",
+    "dev": "run-p start:api start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -12,6 +14,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
@@ -24,7 +27,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "@types/styled-components": "^5.1.7"
+    "@types/styled-components": "^5.1.7",
+    "npm-run-all": "^4.1.5"
   },
   "eslintConfig": {
     "extends": [
