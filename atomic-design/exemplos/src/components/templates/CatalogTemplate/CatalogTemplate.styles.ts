@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Label } from '../../atoms/Label';
+import Label from '../../atoms/Label';
 
 export const Subtitle = styled(Label)`
   margin-top: 4px;

@@ -1,5 +1,5 @@
 import { ThemeColorsType } from '../../../styles/theme';
-import { Label } from '../../atoms/Label';
+import Label from '../../atoms/Label';
 
 import { GridItems, Subtitle, Container } from './CatalogTemplate.styles';
 
