@@ -8,15 +8,41 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  @media(max-width: 1365px) {
+    html {
+      font-size: 93.75%;
+    }
+  }
+
+  @media(max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
+
   html, body, #root {
     height: 1vh
   }
 
   body {
-    font: 14px 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 1366px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
     background: #F1F1F1;
     color: #333;
     -webkit-font-smoothing: antialiased;
+    padding: 0 5rem;
+    
+    @media(max-width: 1280px) {
+      padding: 0 4rem;
+    }
+
+    @media(max-width: 767px) {
+      padding: 0 1.5rem;
+    }
   }
 
   ol, ul {

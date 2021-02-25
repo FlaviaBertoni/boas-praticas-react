@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <Label size="small" color="primary" weight="normal">
         Home
       </Label>
-      <Button variant="text">Text</Button>
+      {/* <Button variant="text">Text</Button>
       <Button variant="outlined">Outlined</Button>
       <Button variant="contained">Contained</Button>
       <Button>Without variant</Button>
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
       </Button>
       <Button size="large">
         <Label size="medium">Without variant</Label>
-      </Button>
+      </Button> */}
     </>
   );
 };

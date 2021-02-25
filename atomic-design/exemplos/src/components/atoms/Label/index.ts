@@ -8,10 +8,10 @@ interface LabelProps {
 }
 
 const fontSize = {
-  small: '16px',
-  medium: '24px',
-  large: '36px',
-  'extra-large': '48px',
+  small: '1rem',
+  medium: '1.5rem',
+  large: '2.25rem',
+  'extra-large': '3rem',
 };
 
 export const Label = styled.label<LabelProps>`
