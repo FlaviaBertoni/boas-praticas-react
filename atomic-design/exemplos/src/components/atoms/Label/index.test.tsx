@@ -1,5 +1,5 @@
 import { render } from '../../../tools/test-utils';
-import { Label } from '.';
+import Label from '.';
 import theme, { ThemeColorsType } from '../../../styles/theme';
 
 type Size = 'small' | 'medium' | 'large' | 'extra-large';
@@ -69,6 +69,7 @@ describe('Test case for Label component', () => {
         font-size: 48px;
         color: #7E7EB8;
         font-weight: normal;
+        cursor: inherit;
       }
 
       <div>

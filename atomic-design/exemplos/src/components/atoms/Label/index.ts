@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 import { ThemeColorsKeys } from '../../../styles/theme';
 
+export type labelSize = 'small' | 'medium' | 'large' | 'extra-large';
+export type labelWeight = 'normal' | 'bold';
 interface LabelProps {
-  size?: 'small' | 'medium' | 'large' | 'extra-large';
+  size?: labelSize;
   color?: ThemeColorsKeys;
-  weight?: 'normal' | 'bold';
+  weight?: labelWeight;
 }
 
 const fontSize = {
@@ -14,8 +16,11 @@ const fontSize = {
   'extra-large': '3rem',
 };
 
-export const Label = styled.label<LabelProps>`
-  font-size: ${({ size }) => (!size ? 'small' : fontSize[size])};
+const Label = styled.label<LabelProps>`
+  font-size: ${({ size }) => fontSize[size || 'small']};
   color: ${({ color, theme }) => theme.getColorCode(color)};
   font-weight: ${({ weight }) => (!weight ? 'normal' : weight)};
+  cursor: inherit;
 `;
+
+export default Label;
