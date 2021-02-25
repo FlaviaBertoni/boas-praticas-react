@@ -17,6 +17,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {
@@ -51,6 +57,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {
@@ -85,6 +97,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {
@@ -119,6 +137,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {
@@ -153,6 +177,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {
@@ -186,6 +216,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {
@@ -220,6 +256,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {
@@ -253,6 +295,12 @@ exports[`Test case for Button component should be able to render the Button comp
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.c0:active {
+  position: relative;
+  top: 2px;
 }
 
 .c1 {

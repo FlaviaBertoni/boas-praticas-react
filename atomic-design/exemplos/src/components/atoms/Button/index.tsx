@@ -1,10 +1,10 @@
 import { ThemeColorsKeys } from '../../../styles/theme';
 import { ContainedButton, OutlinedButton, TextButton } from './styles';
 
-export type buttonVariantType = 'text' | 'outlined' | 'contained';
+export type ButtonVariants = 'text' | 'outlined' | 'contained';
 interface ButtonProps {
   color?: ThemeColorsKeys;
-  variant?: buttonVariantType;
+  variant?: ButtonVariants;
   width?: string;
 }
 

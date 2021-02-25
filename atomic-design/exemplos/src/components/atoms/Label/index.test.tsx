@@ -69,6 +69,7 @@ describe('Test case for Label component', () => {
         font-size: 48px;
         color: #7E7EB8;
         font-weight: normal;
+        cursor: inherit;
       }
 
       <div>

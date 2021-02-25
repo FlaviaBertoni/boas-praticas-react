@@ -13,6 +13,12 @@ const BaseButton = styled.button<ButtonProps>`
   height: 48px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  :active {
+    position: relative;
+    top: 2px;
+  }
 
   ${({ width }) =>
     !!width &&

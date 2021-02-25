@@ -1,9 +1,9 @@
 import { render } from '../../../tools/test-utils';
-import Button, { buttonVariantType } from '.';
+import Button, { ButtonVariants } from '.';
 import theme, { ThemeColorsType } from '../../../styles/theme';
 
 const colors = Object.keys(theme.colors);
-const variants: buttonVariantType[] = ['text', 'outlined', 'contained'];
+const variants: ButtonVariants[] = ['text', 'outlined', 'contained'];
 
 describe('Test case for Button component', () => {
   it('should be able to render the Button component without width', () => {
