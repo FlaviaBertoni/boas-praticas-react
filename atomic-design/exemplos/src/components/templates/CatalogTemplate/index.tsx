@@ -19,15 +19,15 @@ const CatalogTemplate: React.FC<CatalogTemplateProps> = ({
 }) => {
   return (
     <Container>
-      <Label size="extra-large" weight="bold" color={titleColor}>
+      <Label as="h2" size="extra-large" weight="bold" color={titleColor}>
         {title}
       </Label>
       {subtitle && (
-        <Subtitle size="small" color={subtitleColor}>
+        <Subtitle as="h3" size="small" color={subtitleColor}>
           {subtitle}
         </Subtitle>
       )}
-      <GridItems>{children}</GridItems>
+      <GridItems role="grid">{children}</GridItems>
     </Container>
   );
 };
