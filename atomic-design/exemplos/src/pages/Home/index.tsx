@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label } from '../../components/atoms/Label';
+import Label from '../../components/atoms/Label';
 import Button from '../../components/atoms/Button';
 
 const Home: React.FC = () => {
@@ -13,16 +13,16 @@ const Home: React.FC = () => {
       <Button variant="contained">Contained</Button>
       <Button>Without variant</Button>
 
-      <Button size="large" variant="text">
+      <Button width="250px" variant="text">
         Text
       </Button>
-      <Button size="large" variant="outlined">
+      <Button width="250px" variant="outlined">
         Outlined
       </Button>
-      <Button size="large" variant="contained">
+      <Button width="250px" variant="contained">
         Contained
       </Button>
-      <Button size="large">Without variant</Button>
+      <Button width="250px">Without variant</Button>
 
       <Button variant="text">
         <Label>Text</Label>
@@ -37,18 +37,18 @@ const Home: React.FC = () => {
         <Label>Without variant</Label>
       </Button>
 
-      <Button variant="text" size="large">
+      <Button variant="text" width="250px">
         <Label size="medium">Text</Label>
       </Button>
-      <Button variant="outlined" size="large">
+      <Button variant="outlined" width="250px">
         <Label size="medium">Outlined</Label>
       </Button>
-      <Button variant="contained" size="large">
+      <Button variant="contained" width="250px">
         <Label color="white" size="medium">
           Contained
         </Label>
       </Button>
-      <Button size="large">
+      <Button width="250px">
         <Label size="medium">Without variant</Label>
       </Button>
     </>

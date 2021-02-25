@@ -1,5 +1,5 @@
 import { render } from '../../../tools/test-utils';
-import { Label } from '.';
+import Label from '.';
 import theme, { ThemeColorsType } from '../../../styles/theme';
 
 type Size = 'small' | 'medium' | 'large' | 'extra-large';

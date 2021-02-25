@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test case for Button component should be able to render the Button component for black color and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid #000;
+  color: #000;
+}
+
+<div>
+  <button
+    class="c0 c1"
+    color="black"
+  >
+    unit test
+  </button>
+</div>
+`;
+
+exports[`Test case for Button component should be able to render the Button component for contained variant and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #7E7EB8;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    unit test
+  </button>
+</div>
+`;
+
+exports[`Test case for Button component should be able to render the Button component for dark color and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid #2C2E33;
+  color: #2C2E33;
+}
+
+<div>
+  <button
+    class="c0 c1"
+    color="dark"
+  >
+    unit test
+  </button>
+</div>
+`;
+
+exports[`Test case for Button component should be able to render the Button component for disable color and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid #747A88;
+  color: #747A88;
+}
+
+<div>
+  <button
+    class="c0 c1"
+    color="disable"
+  >
+    unit test
+  </button>
+</div>
+`;
+
+exports[`Test case for Button component should be able to render the Button component for outlined variant and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid #7E7EB8;
+  color: #7E7EB8;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    unit test
+  </button>
+</div>
+`;
+
+exports[`Test case for Button component should be able to render the Button component for primary color and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid #7E7EB8;
+  color: #7E7EB8;
+}
+
+<div>
+  <button
+    class="c0 c1"
+    color="primary"
+  >
+    unit test
+  </button>
+</div>
+`;
+
+exports[`Test case for Button component should be able to render the Button component for text variant and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid transparent;
+  color: #7E7EB8;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    unit test
+  </button>
+</div>
+`;
+
+exports[`Test case for Button component should be able to render the Button component for white color and match with the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  border-radius: 16px;
+  height: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+<div>
+  <button
+    class="c0 c1"
+    color="white"
+  >
+    unit test
+  </button>
+</div>
+`;

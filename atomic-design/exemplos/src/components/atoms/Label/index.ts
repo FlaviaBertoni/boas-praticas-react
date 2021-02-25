@@ -14,8 +14,10 @@ const fontSize = {
   'extra-large': '48px',
 };
 
-export const Label = styled.label<LabelProps>`
+const Label = styled.label<LabelProps>`
   font-size: ${({ size }) => (!size ? 'small' : fontSize[size])};
   color: ${({ color, theme }) => theme.getColorCode(color)};
   font-weight: ${({ weight }) => (!weight ? 'normal' : weight)};
 `;
+
+export default Label;

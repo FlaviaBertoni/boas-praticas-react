@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ThemeColorsKeys } from '../../../styles/theme';
 
 interface ButtonProps {
   color?: ThemeColorsKeys;
-  size?: 'small' | 'large';
+  width?: string;
 }
 
 const BaseButton = styled.button<ButtonProps>`
@@ -13,7 +13,12 @@ const BaseButton = styled.button<ButtonProps>`
   height: 48px;
   align-items: center;
   justify-content: center;
-  width: ${({ size }) => (size === 'large' ? '224px' : '112px')};
+
+  ${({ width }) =>
+    !!width &&
+    css`
+      width: ${width};
+    `};
 `;
 
 export const OutlinedButton = styled(BaseButton)<ButtonProps>`
