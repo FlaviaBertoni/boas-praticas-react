@@ -2,7 +2,7 @@
 
 exports[`Test case for Label component should be able to render the Label component for black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #000;
   font-weight: normal;
   cursor: inherit;
@@ -20,7 +20,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component for dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #2C2E33;
   font-weight: normal;
   cursor: inherit;
@@ -38,7 +38,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component for disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #747A88;
   font-weight: normal;
   cursor: inherit;
@@ -56,7 +56,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component for primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #7E7EB8;
   font-weight: normal;
   cursor: inherit;
@@ -74,7 +74,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component for white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   font-weight: normal;
   cursor: inherit;
@@ -92,7 +92,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -109,7 +109,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -126,7 +126,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -143,7 +143,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -160,7 +160,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: white;
   cursor: inherit;
 }
@@ -177,7 +177,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -194,7 +194,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -211,7 +211,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -228,7 +228,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -245,7 +245,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: white;
   cursor: inherit;
 }
@@ -262,7 +262,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, bold weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -279,7 +279,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, bold weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -296,7 +296,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, bold weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -313,7 +313,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, bold weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -330,7 +330,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, bold weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: white;
   cursor: inherit;
 }
@@ -347,7 +347,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, normal weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -364,7 +364,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, normal weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -381,7 +381,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, normal weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -398,7 +398,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, normal weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -415,7 +415,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with large size, normal weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: white;
   cursor: inherit;
 }
@@ -432,7 +432,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -449,7 +449,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -466,7 +466,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -483,7 +483,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -500,7 +500,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: white;
   cursor: inherit;
 }
@@ -517,7 +517,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -534,7 +534,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -551,7 +551,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -568,7 +568,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -585,7 +585,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: white;
   cursor: inherit;
 }
@@ -602,7 +602,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, bold weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -619,7 +619,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, bold weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -636,7 +636,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, bold weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -653,7 +653,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, bold weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -670,7 +670,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, bold weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: white;
   cursor: inherit;
 }
@@ -687,7 +687,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, normal weight, black color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: black;
   cursor: inherit;
 }
@@ -704,7 +704,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, normal weight, dark color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: dark;
   cursor: inherit;
 }
@@ -721,7 +721,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, normal weight, disable color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: disable;
   cursor: inherit;
 }
@@ -738,7 +738,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, normal weight, primary color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: primary;
   cursor: inherit;
 }
@@ -755,7 +755,7 @@ exports[`Test case for Label component should be able to render the Label compon
 
 exports[`Test case for Label component should be able to render the Label component with small size, normal weight, white color and match with the snapshot 1`] = `
 .c0 {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: white;
   cursor: inherit;
 }

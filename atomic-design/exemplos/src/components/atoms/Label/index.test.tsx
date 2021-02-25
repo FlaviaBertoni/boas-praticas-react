@@ -24,12 +24,12 @@ describe('Test case for Label component', () => {
     const { container } = render(<Label size="small">unit test</Label>);
 
     // these assertions were using jest-style-component lib
-    expect(container.firstChild).toHaveStyleRule('font-size', '16px');
+    expect(container.firstChild).toHaveStyleRule('font-size', '1rem');
     expect(container.firstChild).toHaveStyleRule('color', theme.colors.primary);
 
     // this assertion was using only jest matcher
     expect(container.firstChild).toHaveStyle({
-      fontSize: '16px',
+      fontSize: '1rem',
       color: theme.colors.primary,
       fontWeight: 'normal',
     });
@@ -66,7 +66,7 @@ describe('Test case for Label component', () => {
 
     expect(container).toMatchInlineSnapshot(`
       .c0 {
-        font-size: 48px;
+        font-size: 3rem;
         color: #7E7EB8;
         font-weight: normal;
         cursor: inherit;
