@@ -4,6 +4,8 @@ const colors = {
   primary: '#7E7EB8',
   dark: '#2C2E33',
   disable: '#747A88',
+  'card-bg': '#F8F8FA',
+  transparent: 'transparent',
 };
 
 const getColorCode = (color?: ThemeColorsKeys) => colors[color || 'primary'];

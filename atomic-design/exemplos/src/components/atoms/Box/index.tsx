@@ -3,12 +3,12 @@ import { Container } from './Box.styles';
 
 export interface BoxProps {
   direction?: 'column' | 'row';
-  alignItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end';
+  alignItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end' | 'baseline';
   alignContent?: 'normal' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-  justifyItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end';
+  justifyItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end' | 'baseline';
   justifyContent?: 'normal' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
   borderRadius?: string;
-  bgColor?: keyof ThemeColorsType | 'unset';
+  bgColor?: keyof ThemeColorsType;
   padding?: string;
   margin?: string;
   border?: string;
@@ -22,8 +22,8 @@ const Box: React.FC<BoxProps> = ({
   alignContent = 'normal',
   justifyContent = 'normal',
   justifyItems = 'normal',
-  borderRadius = 'inhehit',
-  bgColor = 'unset',
+  borderRadius = 'none',
+  bgColor,
   padding = 'unset',
   margin = 'unset',
   border = 'none',

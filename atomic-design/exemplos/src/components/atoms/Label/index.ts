@@ -7,6 +7,8 @@ interface LabelProps {
   size?: labelSize;
   color?: ThemeColorsKeys;
   weight?: labelWeight;
+  margin?: string;
+  padding?: string;
 }
 
 const fontSize = {
@@ -20,6 +22,8 @@ const Label = styled.label<LabelProps>`
   font-size: ${({ size }) => fontSize[size || 'small']};
   color: ${({ color, theme }) => theme.getColorCode(color)};
   font-weight: ${({ weight }) => (!weight ? 'normal' : weight)};
+  margin: ${({ margin }) => (margin ? margin : 'unset')};
+  padding: ${({ padding }) => (padding ? padding : 'unset')};
   cursor: inherit;
 `;
 

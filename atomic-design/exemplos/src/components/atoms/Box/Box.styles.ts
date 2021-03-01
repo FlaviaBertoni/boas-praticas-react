@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import { BoxProps } from '.';
+import theme from '../../../styles/theme';
 
 // this is another way to writing CSS with Styled-Component
 // https://styled-components.com/docs/advanced#style-objects
@@ -29,7 +31,7 @@ export const Container = styled.div<BoxProps>(
     height,
     margin,
     padding,
-    backgroundColor: bgColor,
+    backgroundColor: bgColor ? theme.getColorCode(bgColor) : 'unset',
     border,
     borderRadius,
   }),

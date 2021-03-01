@@ -17,7 +17,9 @@ export const GridItems = styled.div`
   display: grid;
   gap: 2rem;
 
-  @media (min-width: 320px) {
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+
+  /* @media (min-width: 320px) {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -30,6 +32,6 @@ export const GridItems = styled.div`
   }
 
   @media (min-width: 1280px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  } */
 `;

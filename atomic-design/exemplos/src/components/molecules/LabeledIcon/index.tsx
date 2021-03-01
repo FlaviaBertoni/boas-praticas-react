@@ -1,8 +1,9 @@
 import Box from '../../atoms/Box';
+import Image from '../../atoms/Image';
 import Label from '../../atoms/Label';
 
 interface LabeledIconProps {
-  text: string;
+  text: string | number;
   imgPath: string;
   width?: string;
   height?: string;
@@ -17,9 +18,9 @@ const LabeldedIcon: React.FC<LabeledIconProps> = ({
   textMargin = '0.5rem 0 0 0',
 }) => {
   return (
-    <Box direction="column" bgColor="disable">
-      <img width={width} height={height} src={imgPath} alt={text} />
-      <Label style={{ margin: textMargin }} size="small" weight="bold">
+    <Box direction="column" alignItems="center">
+      <Image width={width} height={height} imgPath={imgPath} alt={String(text)} />
+      <Label margin={textMargin} size="small" weight="bold" color="disable">
         {text}
       </Label>
     </Box>
