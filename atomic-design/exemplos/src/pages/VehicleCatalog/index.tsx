@@ -1,50 +1,46 @@
+import { useEffect, useState } from 'react';
+import Label from '../../components/atoms/Label';
 import CatalogTemplate from '../../components/templates/CatalogTemplate';
 import VehicleCard from '../../components/templates/VehicleCard';
+import api from '../../services/api';
 
-const vehicles = [
-  {
-    id: '1',
-    model: 'K.I.T.T',
-    price: 42,
-    transmisstion: 'Manual',
-    seats: 4,
-    fuel_efficiency: 14.8,
-    efficiency_unit: 'km',
-    image: '/images/cars/KITT.png',
-  },
-  {
-    id: '2',
-    model: 'Ecto-1',
-    price: 52,
-    transmisstion: 'Manual',
-    seats: 4,
-    fuel_efficiency: 7,
-    efficiency_unit: 'km',
-    image: '/images/cars/ecto-1.png',
-  },
-  {
-    id: '3',
-    model: 'DeLorean',
-    price: 52,
-    transmisstion: 'Manual',
-    seats: 4,
-    fuel_efficiency: 12.8,
-    efficiency_unit: 'km',
-    image: '/images/cars/delorean.png',
-  },
-];
+interface VehiclesProps {
+  id: string | number;
+  model: string;
+  price: string | number;
+  image: string;
+  fuel_efficiency: string | number;
+  seats: string | number;
+  transmission: string;
+}
 
 const VehicleCatalog = () => {
+  const [vehicles, setVehicles] = useState<VehiclesProps[]>([]);
+  useEffect(() => {
+    const getVehicles = async () => {
+      try {
+        const { data } = await api.get<VehiclesProps[]>('vehicles');
+        setVehicles(data);
+      } catch (error) {
+        // Do some awesome stuff.
+        console.log(error);
+      }
+    };
+
+    getVehicles();
+  }, []);
+
   return (
     <CatalogTemplate title="Catálogo" subtitle="Alugue o carro dos seus sonhos">
       {vehicles.map(vehicle => (
         <VehicleCard
+          key={vehicle.id}
           carName={vehicle.model}
           rentPrice={vehicle.price}
           carImgPath={vehicle.image}
           fuel_efficiency={vehicle.fuel_efficiency}
           seats={vehicle.seats}
-          transmission={vehicle.transmisstion}
+          transmission={vehicle.transmission}
         />
       ))}
     </CatalogTemplate>
