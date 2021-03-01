@@ -1,16 +1,16 @@
 import { render } from '../../../tools/test-utils';
 
-import Card from '.';
+import Box from '.';
 import theme from '../../../styles/theme';
 
-describe('Card test case', () => {
-  it('should be render the Card Component', () => {
-    render(<Card />);
+describe('Box test case', () => {
+  it('should be render the Box Component', () => {
+    render(<Box />);
   });
 
-  it('should be able to render the Card Component receiving properties and rendering childrens components', () => {
+  it('should be able to render the Box Component receiving properties and rendering childrens components', () => {
     const { container } = render(
-      <Card
+      <Box
         direction="column"
         borderRadius="4px"
         bgColor="disable"
@@ -21,7 +21,7 @@ describe('Card test case', () => {
         <p>text</p>
         <p>other text</p>
         <p>one more</p>
-      </Card>,
+      </Box>,
     );
 
     expect(container.firstChild).toHaveStyleRule('border-radius', '4px');
