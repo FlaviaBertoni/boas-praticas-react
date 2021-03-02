@@ -9,16 +9,17 @@ interface LabeledButtonProps {
   size: LabeledButtonSizes;
   variant: ButtonVariants;
   color?: ThemeColorsKeys;
+  className?: string;
 }
 
-const LabeledButton: React.FC<LabeledButtonProps> = ({ children, size, variant, color }) => {
+const LabeledButton: React.FC<LabeledButtonProps> = ({ children, size, variant, color, className }) => {
   const buttonWidth = size === 'large' ? '224px' : '112px';
   const labelSize: labelSize = size === 'large' ? 'medium' : 'small';
   const labelColor: ThemeColorsKeys | undefined =
     variant === 'contained' ? (theme.isDarkColor(color) ? 'white' : 'black') : color;
 
   return (
-    <Button width={buttonWidth} variant={variant} color={color}>
+    <Button width={buttonWidth} variant={variant} color={color} className={className}>
       <Label size={labelSize} weight="bold" color={labelColor}>
         {children}
       </Label>

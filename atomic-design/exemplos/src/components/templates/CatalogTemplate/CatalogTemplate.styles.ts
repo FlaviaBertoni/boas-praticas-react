@@ -16,22 +16,7 @@ export const GridItems = styled.div`
   width: 100%;
   display: grid;
   gap: 2rem;
+  place-content: center;
 
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-
-  /* @media (min-width: 320px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (min-width: 1280px) {
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  } */
+  grid-template-columns: repeat(auto-fill, minmax(270px, 277px));
 `;

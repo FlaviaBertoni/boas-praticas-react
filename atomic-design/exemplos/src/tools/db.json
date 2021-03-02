@@ -53,10 +53,10 @@
     {
       "id": "6",
       "model": "The Mistery Machine",
-      "price": 79,
+      "price": 199,
       "transmission": "Auto",
-      "seats": 4,
-      "fuel_efficiency": 10.7,
+      "seats": 7,
+      "fuel_efficiency": 9.5,
       "efficiency_unit": "km",
       "image": "/images/cars/TheMysteryMachine.png"
     }

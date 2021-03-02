@@ -6,24 +6,25 @@ interface ButtonProps {
   color?: ThemeColorsKeys;
   variant?: ButtonVariants;
   width?: string;
+  className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant, color, width, children }) => {
+const Button: React.FC<ButtonProps> = ({ variant, color, width, className, children }) => {
   const buttonVariant = variant || 'outlined';
   return (
     <>
       {buttonVariant === 'contained' && (
-        <ContainedButton color={color} width={width}>
+        <ContainedButton color={color} width={width} className={className}>
           {children}
         </ContainedButton>
       )}
       {buttonVariant === 'outlined' && (
-        <OutlinedButton color={color} width={width}>
+        <OutlinedButton color={color} width={width} className={className}>
           {children}
         </OutlinedButton>
       )}
       {buttonVariant === 'text' && (
-        <TextButton color={color} width={width}>
+        <TextButton color={color} width={width} className={className}>
           {children}
         </TextButton>
       )}

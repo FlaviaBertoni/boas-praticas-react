@@ -16,6 +16,7 @@ export interface BoxProps {
   height?: string;
   as?: keyof JSX.IntrinsicElements;
   className?: string;
+  [key: string]: any;
 }
 
 const Box: React.FC<BoxProps> = ({
@@ -24,7 +25,7 @@ const Box: React.FC<BoxProps> = ({
   alignContent = 'normal',
   justifyContent = 'normal',
   justifyItems = 'normal',
-  borderRadius = 'none',
+  borderRadius = '0',
   bgColor,
   padding = 'unset',
   margin = 'unset',
@@ -34,6 +35,7 @@ const Box: React.FC<BoxProps> = ({
   as,
   className,
   children,
+  ...rest
 }) => (
   <Container
     direction={direction}
@@ -50,6 +52,7 @@ const Box: React.FC<BoxProps> = ({
     justifyItems={justifyItems}
     as={as}
     className={className}
+    {...rest}
   >
     {children}
   </Container>
