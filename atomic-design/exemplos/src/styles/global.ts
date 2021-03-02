@@ -30,6 +30,7 @@ export default createGlobalStyle`
     flex-direction: column;
     max-width: 1366px;
     margin: 0 auto;
+    overflow-y: scroll;
     font-family: 'Roboto', sans-serif;
     background: #F1F1F1;
     color: #333;
