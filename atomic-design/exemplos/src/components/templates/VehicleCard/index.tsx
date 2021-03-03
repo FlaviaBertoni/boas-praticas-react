@@ -14,8 +14,6 @@ interface VehicleCardProps {
   transmission: string;
 }
 
-let timerId: NodeJS.Timeout;
-
 const VehicleCard: React.FC<VehicleCardProps> = ({
   carName,
   rentPrice,
@@ -29,7 +27,6 @@ const VehicleCard: React.FC<VehicleCardProps> = ({
 
   useEffect(() => {
     function onMouseOver() {
-      console.log('executei');
       setIsMouseOver(true);
     }
 
