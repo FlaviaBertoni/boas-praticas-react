@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import { ThemeColorsType } from '../../../styles/theme';
 import { Container } from './Box.styles';
 
@@ -19,43 +20,49 @@ export interface BoxProps {
   [key: string]: any;
 }
 
-const Box: React.FC<BoxProps> = ({
-  direction = 'row',
-  alignItems = 'normal',
-  alignContent = 'normal',
-  justifyContent = 'normal',
-  justifyItems = 'normal',
-  borderRadius = '0',
-  bgColor,
-  padding = 'unset',
-  margin = 'unset',
-  border = 'none',
-  width = 'auto',
-  height = 'auto',
-  as,
-  className,
-  children,
-  ...rest
-}) => (
-  <Container
-    direction={direction}
-    borderRadius={borderRadius}
-    bgColor={bgColor}
-    padding={padding}
-    margin={margin}
-    border={border}
-    width={width}
-    height={height}
-    alignItems={alignItems}
-    alignContent={alignContent}
-    justifyContent={justifyContent}
-    justifyItems={justifyItems}
-    as={as}
-    className={className}
-    {...rest}
-  >
-    {children}
-  </Container>
+const Box: React.FC<BoxProps> = forwardRef(
+  (
+    {
+      direction = 'row',
+      alignItems = 'normal',
+      alignContent = 'normal',
+      justifyContent = 'normal',
+      justifyItems = 'normal',
+      borderRadius = '0',
+      bgColor,
+      padding = 'unset',
+      margin = 'unset',
+      border = 'none',
+      width = 'auto',
+      height = 'auto',
+      as,
+      className,
+      children,
+      ...rest
+    },
+    ref,
+  ) => (
+    <Container
+      direction={direction}
+      borderRadius={borderRadius}
+      bgColor={bgColor}
+      padding={padding}
+      margin={margin}
+      border={border}
+      width={width}
+      height={height}
+      alignItems={alignItems}
+      alignContent={alignContent}
+      justifyContent={justifyContent}
+      justifyItems={justifyItems}
+      as={as}
+      className={className}
+      ref={ref}
+      {...rest}
+    >
+      {children}
+    </Container>
+  ),
 );
 
 export default Box;

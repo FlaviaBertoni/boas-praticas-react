@@ -3,7 +3,7 @@ import Label from '../../atoms/Label';
 import Image from '../../atoms/Image';
 import VehicleDetails from '../../molecules/VehicleDetails';
 import { Button, Container } from './VehicleCard.styles';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface VehicleCardProps {
   carName: string;
@@ -14,6 +14,8 @@ interface VehicleCardProps {
   transmission: string;
 }
 
+let timerId: NodeJS.Timeout;
+
 const VehicleCard: React.FC<VehicleCardProps> = ({
   carName,
   rentPrice,
@@ -23,14 +25,28 @@ const VehicleCard: React.FC<VehicleCardProps> = ({
   seats,
 }) => {
   const [isMouseOver, setIsMouseOver] = useState(false);
+  const containerRef = useRef<HTMLElement>(null);
 
-  function onMouseOver() {
-    setIsMouseOver(true);
-  }
+  useEffect(() => {
+    function onMouseOver() {
+      console.log('executei');
+      setIsMouseOver(true);
+    }
 
-  function onMouseOut() {
-    setIsMouseOver(false);
-  }
+    function onMouseOut() {
+      setIsMouseOver(false);
+    }
+
+    const $container = containerRef.current;
+
+    $container?.addEventListener('mouseover', onMouseOver);
+    $container?.addEventListener('mouseout', onMouseOut);
+
+    return () => {
+      $container?.removeEventListener('mouseover', onMouseOver);
+      $container?.removeEventListener('mouseout', onMouseOut);
+    };
+  }, []);
 
   return (
     <Container
@@ -41,8 +57,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({
       borderRadius="1.5rem"
       bgColor="card-bg"
       height="346px"
-      onMouseOver={onMouseOver}
-      onMouseOut={onMouseOut}
+      ref={containerRef}
     >
       <section>
         <Label as="h2" size="medium" color="dark">
@@ -59,8 +74,9 @@ const VehicleCard: React.FC<VehicleCardProps> = ({
             </Label>
           </Label>
         </Box>
-        <Image width="100%" height="auto" imgPath={carImgPath} alt={`imagem de ${carName}`} margin="0.5rem 0 0 0" />
       </section>
+      <Image width="100%" height="auto" imgPath={carImgPath} alt={`imagem de ${carName}`} margin="0.5rem 0 0 0" />
+
       <Box as="span" height="60px" width="100%" direction="column">
         {isMouseOver ? (
           <Button size="large" variant="contained">

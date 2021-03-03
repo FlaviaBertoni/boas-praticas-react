@@ -32,7 +32,7 @@ export default createGlobalStyle`
     margin: 0 auto;
     overflow-y: scroll;
     font-family: 'Roboto', sans-serif;
-    background: #F1F1F1;
+    background: #FeFeFe;
     color: #333;
     -webkit-font-smoothing: antialiased;
     padding: 0 5rem;

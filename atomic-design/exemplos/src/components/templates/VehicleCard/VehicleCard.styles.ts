@@ -5,6 +5,16 @@ import LabeledButton from '../../molecules/LabeledButton';
 
 export const Container = styled(Box)`
   transition: border 100ms;
+
+  & > div,
+  section,
+  span,
+  button {
+    pointer-events: none;
+  }
+
+  cursor: pointer;
+
   &:hover {
     border: 2px solid ${theme.colors.primary};
   }
