@@ -60,5 +60,19 @@
       "efficiency_unit": "km",
       "image": "/images/cars/TheMysteryMachine.png"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "carlostgti@outlook.com",
+      "password": "M@n4nc14l",
+      "name": "Carlos Queiroz"
+    },
+    {
+      "id": 2,
+      "email": "cqueiroz@ciandt.com",
+      "password": "12345678",
+      "name": "Carlos Queiroz"
+    }
   ]
 }

@@ -3,7 +3,7 @@ import { ThemeColorsKeys } from '../../../styles/theme';
 
 export type labelSize = 'small' | 'medium' | 'large' | 'extra-large';
 export type labelWeight = 'normal' | 'bold';
-interface LabelProps {
+interface LabelProps extends React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement> {
   size?: labelSize;
   color?: ThemeColorsKeys;
   weight?: labelWeight;

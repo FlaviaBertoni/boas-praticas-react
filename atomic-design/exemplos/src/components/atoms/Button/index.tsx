@@ -7,24 +7,25 @@ interface ButtonProps {
   variant?: ButtonVariants;
   width?: string;
   className?: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ variant, color, width, className, children }) => {
+const Button: React.FC<ButtonProps> = ({ variant, color, width, className, children, onClick }) => {
   const buttonVariant = variant || 'outlined';
   return (
     <>
       {buttonVariant === 'contained' && (
-        <ContainedButton color={color} width={width} className={className}>
+        <ContainedButton onClick={onClick} color={color} width={width} className={className}>
           {children}
         </ContainedButton>
       )}
       {buttonVariant === 'outlined' && (
-        <OutlinedButton color={color} width={width} className={className}>
+        <OutlinedButton onClick={onClick} color={color} width={width} className={className}>
           {children}
         </OutlinedButton>
       )}
       {buttonVariant === 'text' && (
-        <TextButton color={color} width={width} className={className}>
+        <TextButton onClick={onClick} color={color} width={width} className={className}>
           {children}
         </TextButton>
       )}

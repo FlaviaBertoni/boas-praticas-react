@@ -5,6 +5,7 @@ export interface ImageProps {
   height?: string;
   margin?: string;
   padding?: string;
+  borderRadius?: string;
   objectFit?: 'cover' | 'contain' | 'fill' | 'unset';
   imgPath: string;
   alt: string;
@@ -16,10 +17,18 @@ const Image = ({
   width = '100%',
   height = '100%',
   objectFit = 'contain',
+  borderRadius = '0',
   margin = '0',
   padding = '0',
 }: ImageProps): JSX.Element => (
-  <Container width={width} height={height} objectFit={objectFit} margin={margin} padding={padding}>
+  <Container
+    borderRadius={borderRadius}
+    width={width}
+    height={height}
+    objectFit={objectFit}
+    margin={margin}
+    padding={padding}
+  >
     <img src={imgPath} alt={alt} />
   </Container>
 );

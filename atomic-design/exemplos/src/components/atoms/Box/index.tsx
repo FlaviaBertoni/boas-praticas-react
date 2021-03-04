@@ -3,7 +3,7 @@ import { ThemeColorsType } from '../../../styles/theme';
 import { Container } from './Box.styles';
 
 export interface BoxProps {
-  direction?: 'column' | 'row';
+  direction?: 'column' | 'row' | 'column-reverse' | 'row-reverse';
   alignItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end' | 'baseline';
   alignContent?: 'normal' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
   justifyItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end' | 'baseline';
@@ -17,10 +17,12 @@ export interface BoxProps {
   height?: string;
   as?: keyof JSX.IntrinsicElements;
   className?: string;
+  ref?: React.ForwardedRef<any>;
+  children?: React.ReactNode;
   [key: string]: any;
 }
 
-const Box: React.FC<BoxProps> = forwardRef(
+const Box = forwardRef(
   (
     {
       direction = 'row',
@@ -38,8 +40,8 @@ const Box: React.FC<BoxProps> = forwardRef(
       as,
       className,
       children,
-      ...rest
-    },
+      ...props
+    }: BoxProps,
     ref,
   ) => (
     <Container
@@ -58,7 +60,7 @@ const Box: React.FC<BoxProps> = forwardRef(
       as={as}
       className={className}
       ref={ref}
-      {...rest}
+      {...props}
     >
       {children}
     </Container>

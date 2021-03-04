@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start:api": "npx json-server --port=3333 --delay=1000 ./src/tools/db.json",
-    "dev": "run-p start:api start",
+    "start:node": "node ./node/server.js",
+    "dev": "run-p start:api start:node start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -16,6 +17,8 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/react-router-dom": "^5.1.7",
     "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
