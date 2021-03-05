@@ -5,10 +5,10 @@ export const Container = styled.div<Omit<ImageProps, 'imgPath' | 'alt'>>`
   height: ${({ height }) => height};
   margin: ${({ margin }) => margin};
   padding: ${({ padding }) => padding};
-
   img {
     width: 100%;
     height: 100%;
     object-fit: ${({ objectFit }) => objectFit};
+    border-radius: ${({ borderRadius }) => borderRadius};
   }
 `;

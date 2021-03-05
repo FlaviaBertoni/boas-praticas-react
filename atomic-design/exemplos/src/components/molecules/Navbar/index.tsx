@@ -3,10 +3,10 @@ import { Container, LinkLabel } from './Navbar.styles';
 
 const Navbar = () => {
   return (
-    <Container forwardedAs="nav" width="100%" justifyContent="center">
+    <Container forwardedAs="nav" justifyContent="center">
       <ul>
         <li>
-          <LinkLabel as={NavLink} activeClassName="selected" color="black" exact to="/" size="small">
+          <LinkLabel as={NavLink} activeClassName="selected" color="black" to="/home" size="small">
             Home
           </LinkLabel>
         </li>
