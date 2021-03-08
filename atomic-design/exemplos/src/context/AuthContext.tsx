@@ -18,15 +18,16 @@ interface GithubUserData {
 
 interface AuthContextProps {
   user: UserData | null;
-  signIn(email: string, password: string): Promise<Error | void>;
-  redirectToGithub(): void;
-  githubSignIn(accessToken: string): Promise<void>;
+  signIn: (email: string, password: string) => Promise<Error | void>;
+  createUser: (user: Omit<UserData, 'id'>) => Promise<Error | void>;
+  redirectToGithub: () => void;
+  githubSignIn: (accessToken: string) => Promise<void>;
 }
 
 export const AuthContext = createContext({} as AuthContextProps);
 
 const AuthProvider: React.FC = ({ children }) => {
-  const [user, setUser] = useState<UserData | null>(() => {
+  const [user, setUser] = useState<UserData>(() => {
     const user = window.sessionStorage.getItem('@RentACar:user');
     if (!user) {
       return null;
@@ -71,7 +72,7 @@ const AuthProvider: React.FC = ({ children }) => {
     }
 
     if (data[0].password === password) {
-      setUser(data[0]);
+      setUser({ ...data[0], password: '' });
       window.sessionStorage.setItem('@RentACar:user', JSON.stringify(data[0]));
 
       history.push('/home');
@@ -80,11 +81,30 @@ const AuthProvider: React.FC = ({ children }) => {
     }
   }
 
+  async function createUser(user: Omit<UserData, 'id'>) {
+    const { data: emailAlreadyExists } = await api.get<UserData[]>(`/users?email=${user.email}`);
+
+    if (emailAlreadyExists.length) {
+      throw Error('O email informado já está cadastrado.');
+    }
+
+    const id = Date.now();
+    const newUser = { ...user, id };
+
+    await api.post('/users', newUser);
+
+    setUser({ ...newUser, password: '' });
+
+    window.sessionStorage.setItem('@RentACar:user', JSON.stringify(newUser));
+    history.push('/home');
+  }
+
   return (
     <AuthContext.Provider
       value={{
         user,
         signIn,
+        createUser,
         redirectToGithub,
         githubSignIn,
       }}

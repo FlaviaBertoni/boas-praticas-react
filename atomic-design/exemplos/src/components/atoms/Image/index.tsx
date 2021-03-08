@@ -9,6 +9,8 @@ export interface ImageProps {
   objectFit?: 'cover' | 'contain' | 'fill' | 'unset';
   imgPath: string;
   alt: string;
+  className?: string;
+  as?: keyof JSX.IntrinsicElements;
 }
 
 const Image = ({
@@ -20,6 +22,8 @@ const Image = ({
   borderRadius = '0',
   margin = '0',
   padding = '0',
+  className,
+  as,
 }: ImageProps): JSX.Element => (
   <Container
     borderRadius={borderRadius}
@@ -28,6 +32,8 @@ const Image = ({
     objectFit={objectFit}
     margin={margin}
     padding={padding}
+    className={className}
+    as={as}
   >
     <img src={imgPath} alt={alt} />
   </Container>

@@ -7,8 +7,12 @@ import { VideoContainer, ContentContainer } from './LandingPage.styles';
 const LandingPage = () => {
   const history = useHistory();
 
-  function goToLoginPage() {
+  function handleClickLogin() {
     history.push('/sign-in');
+  }
+
+  function handleClickRegister() {
+    history.push('/sign-up');
   }
 
   return (
@@ -18,10 +22,10 @@ const LandingPage = () => {
       </VideoContainer>
       <ContentContainer alignItems="center" justifyContent="space-between" direction="column" height="100vh">
         <Box width="100%" direction="row-reverse" margin="2rem 0 0 0">
-          <LabeledButton size="small" variant="text">
+          <LabeledButton size="small" variant="text" onClick={handleClickRegister}>
             Registrar
           </LabeledButton>
-          <LabeledButton size="small" variant="outlined" onClick={goToLoginPage}>
+          <LabeledButton size="small" variant="outlined" onClick={handleClickLogin}>
             Entrar
           </LabeledButton>
         </Box>
