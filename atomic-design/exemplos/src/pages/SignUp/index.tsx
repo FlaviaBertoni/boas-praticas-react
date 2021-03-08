@@ -1,4 +1,5 @@
 import { useReducer, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Background } from '../../components/atoms/Background';
 import Box from '../../components/atoms/Box';
 import Button from '../../components/atoms/Button';
@@ -144,6 +145,9 @@ const SignUp = () => {
             <Label size="medium">{isLoading ? 'Inciando seu sonho...' : 'Registrar'}</Label>
           </Button>
         </Box>
+        <Label color="white">
+          <Link to="/sign-in">Já tem cadastro? Entre aqui.</Link>
+        </Label>
       </Box>
     </Box>
   );

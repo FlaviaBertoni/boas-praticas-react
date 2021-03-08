@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Background } from '../../components/atoms/Background';
 import Box from '../../components/atoms/Box';
 import Button from '../../components/atoms/Button';
@@ -90,6 +90,12 @@ const SignIn = () => {
           Ou
         </Label>
         <GithubButton onClick={redirectToGithub}>Sign in with Github</GithubButton>
+        <Label as="h2" size="medium" color="white" margin="1rem 0 0 0">
+          Ou
+        </Label>
+        <Label margin="1rem 0 0 0" color="white">
+          <Link to="/sign-up">Ainda não tem cadastro? Registre-se aqui.</Link>
+        </Label>
       </Content>
     </Container>
   );
