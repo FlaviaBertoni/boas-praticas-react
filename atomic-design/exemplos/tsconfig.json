@@ -16,5 +16,8 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "src/setupTest.ts"]
+  "include": ["src", "src/setupTest.ts"],
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
 }

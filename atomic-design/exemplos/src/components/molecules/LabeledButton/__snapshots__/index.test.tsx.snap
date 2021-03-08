@@ -2,15 +2,21 @@
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, contained variant, black color and match with the snapshot 1`] = `<div />`;
 
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, contained variant, card-bg color and match with the snapshot 1`] = `<div />`;
+
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, contained variant, dark color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, contained variant, disable color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, contained variant, primary color and match with the snapshot 1`] = `<div />`;
 
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, contained variant, transparent color and match with the snapshot 1`] = `<div />`;
+
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, contained variant, white color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, outlined variant, black color and match with the snapshot 1`] = `<div />`;
+
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, outlined variant, card-bg color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, outlined variant, dark color and match with the snapshot 1`] = `<div />`;
 
@@ -18,9 +24,13 @@ exports[`Test case for LabeledButton component should be able to render the Labe
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, outlined variant, primary color and match with the snapshot 1`] = `<div />`;
 
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, outlined variant, transparent color and match with the snapshot 1`] = `<div />`;
+
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, outlined variant, white color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, text variant, black color and match with the snapshot 1`] = `<div />`;
+
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, text variant, card-bg color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, text variant, dark color and match with the snapshot 1`] = `<div />`;
 
@@ -28,9 +38,13 @@ exports[`Test case for LabeledButton component should be able to render the Labe
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, text variant, primary color and match with the snapshot 1`] = `<div />`;
 
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, text variant, transparent color and match with the snapshot 1`] = `<div />`;
+
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with large size, text variant, white color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, contained variant, black color and match with the snapshot 1`] = `<div />`;
+
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, contained variant, card-bg color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, contained variant, dark color and match with the snapshot 1`] = `<div />`;
 
@@ -38,9 +52,13 @@ exports[`Test case for LabeledButton component should be able to render the Labe
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, contained variant, primary color and match with the snapshot 1`] = `<div />`;
 
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, contained variant, transparent color and match with the snapshot 1`] = `<div />`;
+
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, contained variant, white color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, outlined variant, black color and match with the snapshot 1`] = `<div />`;
+
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, outlined variant, card-bg color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, outlined variant, dark color and match with the snapshot 1`] = `<div />`;
 
@@ -48,14 +66,20 @@ exports[`Test case for LabeledButton component should be able to render the Labe
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, outlined variant, primary color and match with the snapshot 1`] = `<div />`;
 
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, outlined variant, transparent color and match with the snapshot 1`] = `<div />`;
+
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, outlined variant, white color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, text variant, black color and match with the snapshot 1`] = `<div />`;
+
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, text variant, card-bg color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, text variant, dark color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, text variant, disable color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, text variant, primary color and match with the snapshot 1`] = `<div />`;
+
+exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, text variant, transparent color and match with the snapshot 1`] = `<div />`;
 
 exports[`Test case for LabeledButton component should be able to render the LabeledButton component with small size, text variant, white color and match with the snapshot 1`] = `<div />`;

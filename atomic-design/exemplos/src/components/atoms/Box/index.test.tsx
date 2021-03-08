@@ -35,11 +35,24 @@ describe('Box test case', () => {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-align-items: normal;
+        -webkit-box-align: normal;
+        -ms-flex-align: normal;
+        align-items: normal;
+        -webkit-align-content: normal;
+        -ms-flex-line-pack: normal;
+        align-content: normal;
+        justify-items: normal;
+        -webkit-box-pack: normal;
+        -webkit-justify-content: normal;
+        -ms-flex-pack: normal;
+        justify-content: normal;
         width: auto;
         height: auto;
+        max-width: unset;
         margin: 0.5rem;
         padding: 0.5rem;
-        background-color: disable;
+        background-color: #747A88;
         border: 1px solid #000;
         border-radius: 4px;
       }

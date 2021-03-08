@@ -10,7 +10,8 @@ const colors = {
 
 const getColorCode = (color?: ThemeColorsKeys) => colors[color || 'primary'];
 
-const isDarkColor = (color?: ThemeColorsKeys) => ![colors.white, colors.disable].includes(color || colors.primary);
+const isDarkColor = (color?: ThemeColorsKeys) =>
+  ![colors.white, colors.disable].includes(getColorCode(color) || colors.primary);
 
 const theme = { colors, getColorCode, isDarkColor };
 
