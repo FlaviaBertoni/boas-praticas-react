@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Label from '../../components/atoms/Label';
-import CatalogTemplate from '../../components/templates/CatalogTemplate';
-import VehicleCard from '../../components/templates/VehicleCard';
+import CatalogTemplate from '../../components/organism/CatalogTemplate';
+import VehicleCard from '../../components/organism/VehicleCard';
 import api from '../../services/api';
 
 interface VehiclesProps {
