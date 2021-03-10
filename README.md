@@ -6,11 +6,11 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
 #### React.js
 
 - [Como se manter atualizado](#como-se-manter-atualizado)
-- [Breve história do react](/02.%20Breve%20historia%do%react/README.md) (o que resolve, diferenças principais das versões 15 e > 16.8 (render, classes, hooks), é uma lib)
-  - Atualização do DOM (exemplo vanilla vs react - virtual dom (VDOM) otimização é diferente do shadow dom)
-  - Componentização (organização, reaproveitamento)
-  - JSX - https://reactjs.org/ e https://babeljs.io/repl
-- Componentes 
+- [Breve história do react](/02.%20Breve%20historia%20do%20react/README.md) (o que resolve, diferenças principais das versões 15 e > 16.8 (render, classes, hooks), é uma lib)
+  - [DOM e Virtual DOM](02.%20Breve%20historia%20do%20react/README.md#DOM-e-Virtual-DOM)
+  - [Componentização](02.%20Breve%20historia%20do%20react/README.md#Componentização-(organização,-reaproveitamento)) (organização, reaproveitamento)
+  - [JSX](02.%20Breve%20historia%20do%20react/README.md#JSX) - https://reactjs.org/ e https://babeljs.io/repl
+- Componentes
   - o que é um componente? tudo é componente
   - componentes compatilhados - input, button
   - componentes page - Home
