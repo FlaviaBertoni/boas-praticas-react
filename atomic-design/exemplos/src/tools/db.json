@@ -73,6 +73,12 @@
       "email": "cqueiroz@ciandt.com",
       "password": "12345678",
       "name": "Carlos Queiroz"
+    },
+    {
+      "id": 3,
+      "email": "luiznj@ciandt.com",
+      "password": "12345678",
+      "name": "Luiz Negreiros"
     }
   ]
 }
