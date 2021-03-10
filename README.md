@@ -6,7 +6,7 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
 #### React.js
 
 - [Como se manter atualizado](#como-se-manter-atualizado)
-- Breve história do react (o que resolve, diferenças principais das versões 15 e > 16.8 (render, classes, hooks), é uma lib)
+- [Breve história do react](/02.%20Breve%20historia%do%react/README.md) (o que resolve, diferenças principais das versões 15 e > 16.8 (render, classes, hooks), é uma lib)
   - Atualização do DOM (exemplo vanilla vs react - virtual dom (VDOM) otimização é diferente do shadow dom)
   - Componentização (organização, reaproveitamento)
   - JSX - https://reactjs.org/ e https://babeljs.io/repl
@@ -26,10 +26,10 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
 - Estilo
   - Style inline (json) - menos performatico
   - CSS (Class Name)
-  - CSS-in-JS 
+  - CSS-in-JS
     - Styled components (vantagens, dinamico, scoped - menos change de conflito de estilo)
 - Estrutura de projetos mais populares (container, index, service)
-- [Atomic Design](/atomic-design/README.md) 
+- [Atomic Design](/09.%20Atomic%20Design/README.md) 
 - Testes unitários (mount (render) - react testing library, jest, enzyme, mocha)
 
 ### React Native
