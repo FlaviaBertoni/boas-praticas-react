@@ -2,9 +2,9 @@ import { forwardRef } from 'react';
 import { ThemeColorsType } from '../../../styles/theme';
 import { Container } from './Box.styles';
 
-export interface BoxProps {
+export interface BoxProps extends React.HTMLAttributes<HTMLElement> {
   direction?: 'column' | 'row' | 'column-reverse' | 'row-reverse';
-  alignItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end' | 'baseline';
+  alignItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end' | 'baseline' | 'stretch';
   alignContent?: 'normal' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
   justifyItems?: 'normal' | 'stretch' | 'center' | 'start' | 'end' | 'baseline';
   justifyContent?: 'normal' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
@@ -14,12 +14,12 @@ export interface BoxProps {
   margin?: string;
   border?: string;
   width?: string;
+  maxWidth?: string;
   height?: string;
   as?: keyof JSX.IntrinsicElements;
   className?: string;
   ref?: React.ForwardedRef<any>;
   children?: React.ReactNode;
-  [key: string]: any;
 }
 
 const Box = forwardRef(
@@ -37,12 +37,13 @@ const Box = forwardRef(
       border = 'none',
       width = 'auto',
       height = 'auto',
+      maxWidth = 'unset',
       as,
       className,
       children,
       ...props
     }: BoxProps,
-    ref,
+    ref: React.ForwardedRef<HTMLElement>,
   ) => (
     <Container
       direction={direction}
@@ -52,6 +53,7 @@ const Box = forwardRef(
       margin={margin}
       border={border}
       width={width}
+      maxWidth={maxWidth}
       height={height}
       alignItems={alignItems}
       alignContent={alignContent}

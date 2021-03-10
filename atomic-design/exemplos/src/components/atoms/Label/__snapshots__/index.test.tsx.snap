@@ -5,6 +5,8 @@ exports[`Test case for Label component should be able to render the Label compon
   font-size: 1rem;
   color: #000;
   font-weight: normal;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -18,11 +20,33 @@ exports[`Test case for Label component should be able to render the Label compon
 </div>
 `;
 
+exports[`Test case for Label component should be able to render the Label component for card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1rem;
+  color: #F8F8FA;
+  font-weight: normal;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="card-bg"
+  >
+    unit test
+  </label>
+</div>
+`;
+
 exports[`Test case for Label component should be able to render the Label component for dark color and match with the snapshot 1`] = `
 .c0 {
   font-size: 1rem;
   color: #2C2E33;
   font-weight: normal;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -41,6 +65,8 @@ exports[`Test case for Label component should be able to render the Label compon
   font-size: 1rem;
   color: #747A88;
   font-weight: normal;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -59,6 +85,8 @@ exports[`Test case for Label component should be able to render the Label compon
   font-size: 1rem;
   color: #7E7EB8;
   font-weight: normal;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -72,11 +100,33 @@ exports[`Test case for Label component should be able to render the Label compon
 </div>
 `;
 
+exports[`Test case for Label component should be able to render the Label component for transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1rem;
+  color: transparent;
+  font-weight: normal;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="transparent"
+  >
+    unit test
+  </label>
+</div>
+`;
+
 exports[`Test case for Label component should be able to render the Label component for white color and match with the snapshot 1`] = `
 .c0 {
   font-size: 1rem;
   color: #fff;
   font-weight: normal;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -94,6 +144,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 3rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -111,6 +182,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -128,6 +201,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -145,6 +220,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, bold weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 3rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -162,6 +258,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -179,6 +277,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 3rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -196,6 +315,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -213,6 +334,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -230,6 +353,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with extra-large size, normal weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 3rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -247,6 +391,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 3rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -264,6 +410,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, bold weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 2.25rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -281,6 +448,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -298,6 +467,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -315,6 +486,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, bold weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 2.25rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -332,6 +524,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -349,6 +543,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, normal weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 2.25rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -366,6 +581,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -383,6 +600,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -400,6 +619,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with large size, normal weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 2.25rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -417,6 +657,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 2.25rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -434,6 +676,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -451,6 +714,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -468,6 +733,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -485,6 +752,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, bold weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -502,6 +790,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -519,6 +809,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -536,6 +847,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -553,6 +866,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -570,6 +885,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with medium size, normal weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -587,6 +923,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1.5rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -604,6 +942,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, bold weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -621,6 +980,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -638,6 +999,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -655,6 +1018,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="bold"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, bold weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -672,6 +1056,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -689,6 +1075,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: black;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, normal weight, card-bg color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: card-bg;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -706,6 +1113,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: dark;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -723,6 +1132,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: disable;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -740,6 +1151,27 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: primary;
+  margin: unset;
+  padding: unset;
+  cursor: inherit;
+}
+
+<div>
+  <label
+    class="c0"
+    color="normal"
+  >
+    unit test
+  </label>
+</div>
+`;
+
+exports[`Test case for Label component should be able to render the Label component with small size, normal weight, transparent color and match with the snapshot 1`] = `
+.c0 {
+  font-size: 1rem;
+  font-weight: transparent;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 
@@ -757,6 +1189,8 @@ exports[`Test case for Label component should be able to render the Label compon
 .c0 {
   font-size: 1rem;
   font-weight: white;
+  margin: unset;
+  padding: unset;
   cursor: inherit;
 }
 

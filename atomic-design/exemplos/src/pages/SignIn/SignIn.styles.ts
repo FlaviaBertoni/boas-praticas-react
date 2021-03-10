@@ -6,12 +6,6 @@ export const Container = styled(Box)`
   align-items: stretch;
 `;
 
-export const Background = styled(Box)`
-  flex: 1;
-  background: url('images/background/delorean.jpg') no-repeat center;
-  background-size: cover;
-`;
-
 export const Content = styled(Box)`
   max-width: 500px;
 `;

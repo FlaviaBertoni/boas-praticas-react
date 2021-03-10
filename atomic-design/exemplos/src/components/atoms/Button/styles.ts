@@ -4,11 +4,12 @@ import { ThemeColorsKeys } from '../../../styles/theme';
 interface ButtonProps {
   color?: ThemeColorsKeys;
   width?: string;
+  margin?: string;
 }
 
 const BaseButton = styled.button<ButtonProps>`
   display: flex;
-  margin: 10px;
+  margin: ${({ margin }) => margin ?? '10px'};
   border-radius: 16px;
   height: 48px;
   align-items: center;

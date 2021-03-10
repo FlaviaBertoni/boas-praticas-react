@@ -1,7 +1,8 @@
 import React from 'react';
+import { FontSizeType } from '../../../common/types';
 import theme, { ThemeColorsKeys } from '../../../styles/theme';
 import Button, { ButtonVariants } from '../../atoms/Button';
-import Label, { labelSize } from '../../atoms/Label';
+import Label from '../../atoms/Label';
 
 export type LabeledButtonSizes = 'small' | 'large';
 
@@ -15,7 +16,7 @@ interface LabeledButtonProps {
 
 const LabeledButton: React.FC<LabeledButtonProps> = ({ children, size, variant, color, className, onClick }) => {
   const buttonWidth = size === 'large' ? '224px' : '112px';
-  const labelSize: labelSize = size === 'large' ? 'medium' : 'small';
+  const labelSize: FontSizeType = size === 'large' ? 'medium' : 'small';
   const labelColor: ThemeColorsKeys | undefined =
     variant === 'contained' ? (theme.isDarkColor(color) ? 'white' : 'black') : color;
 

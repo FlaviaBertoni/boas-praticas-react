@@ -1,25 +1,17 @@
 import styled from 'styled-components';
+import { FontSizeType, FontWeightType } from '../../../common/types';
 import { ThemeColorsKeys } from '../../../styles/theme';
-
-export type labelSize = 'small' | 'medium' | 'large' | 'extra-large';
-export type labelWeight = 'normal' | 'bold';
+import fontSizeSelector from '../../../utils/font-size-selector';
 interface LabelProps extends React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement> {
-  size?: labelSize;
+  size?: FontSizeType;
   color?: ThemeColorsKeys;
-  weight?: labelWeight;
+  weight?: FontWeightType;
   margin?: string;
   padding?: string;
 }
 
-const fontSize = {
-  small: '1rem',
-  medium: '1.5rem',
-  large: '2.25rem',
-  'extra-large': '3rem',
-};
-
 const Label = styled.label<LabelProps>`
-  font-size: ${({ size }) => fontSize[size || 'small']};
+  font-size: ${({ size }) => fontSizeSelector(size)};
   color: ${({ color, theme }) => theme.getColorCode(color)};
   font-weight: ${({ weight }) => (!weight ? 'normal' : weight)};
   margin: ${({ margin }) => (margin ? margin : 'unset')};

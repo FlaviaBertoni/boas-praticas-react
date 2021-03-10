@@ -36,4 +36,45 @@ describe('Test case for Button component', () => {
       expect(container).toMatchSnapshot();
     },
   );
+
+  it('should be able to render a Button with black theme colors', () => {
+    const { container } = render(<Button variant="contained" color="white" />);
+
+    expect(container.firstChild).toMatchInlineSnapshot(`
+      .c0 {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 10px;
+        border-radius: 16px;
+        height: 48px;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .c0:active {
+        position: relative;
+        top: 2px;
+      }
+
+      .c1 {
+        border: 1px solid transparent;
+        color: #000;
+        background-color: #fff;
+      }
+
+      <button
+        class="c0 c1"
+        color="white"
+      />
+    `);
+  });
 });

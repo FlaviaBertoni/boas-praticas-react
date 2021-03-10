@@ -75,10 +75,37 @@
       "name": "Carlos Queiroz"
     },
     {
-      "id": 3,
-      "email": "luiznj@ciandt.com",
-      "password": "12345678",
-      "name": "Luiz Negreiros"
+      "newUser": {
+        "name": "Carlos teste",
+        "email": "carlos.da.catia@gmail.com",
+        "password": "123456",
+        "id": 1615213221105
+      },
+      "id": 3
+    },
+    {
+      "newUser": {
+        "name": "Carlos Queiroz",
+        "email": "carlos.da.catia@gmail.com",
+        "password": "123456",
+        "id": 1615214235093
+      },
+      "id": 4
+    },
+    {
+      "newUser": {
+        "name": "Carlos Queiroz",
+        "email": "carlos.da.catia@gmail.com",
+        "password": "123456",
+        "id": 1615214778055
+      },
+      "id": 5
+    },
+    {
+      "name": "Carlos Queiroz",
+      "email": "carlos.da.catia@gmail.com",
+      "password": "123456",
+      "id": 1615215407741
     }
   ]
 }

@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { Background } from '../../components/atoms/Background';
 import Box from '../../components/atoms/Box';
+import Button from '../../components/atoms/Button';
+import Input from '../../components/atoms/Input';
 import Label from '../../components/atoms/Label';
-import LabeledButton from '../../components/molecules/LabeledButton';
 import useAuth from '../../hooks/useAuth';
-import { Background, Container, Content, GithubButton } from './SignIn.styles';
+import { Container, Content, GithubButton } from './SignIn.styles';
 
 const SignIn = () => {
   const query = useQuery();
@@ -12,6 +14,7 @@ const SignIn = () => {
 
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const accessToken = query.get('access_token');
 
@@ -29,10 +32,13 @@ const SignIn = () => {
 
   async function handleLogin(event: React.MouseEvent<HTMLFormElement, MouseEvent>) {
     event.preventDefault();
+    setIsLoading(true);
     try {
       await signIn(email, password);
     } catch (error) {
       console.log(error.message);
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -42,28 +48,54 @@ const SignIn = () => {
 
   return (
     <Container>
-      <Background />
+      <Background url="images/background/delorean.jpg" />
       <Content direction="column" bgColor="primary" justifyContent="center" alignItems="center" width="100%">
         <Label as="h2" size="medium" color="white">
           Informe seus dados de login
         </Label>
-        <Box as="form" direction="column" margin="1rem 0" onSubmit={handleLogin}>
+        <Box as="form" direction="column" margin="1rem 0" onSubmit={handleLogin} padding="0 3rem" width="100%">
           <Label htmlFor="email" color="white">
             e-mail
           </Label>
-          <input required type="email" name="email" id="email" onChange={handleEmailChange} />
-          <Label htmlFor="password" color="white">
+          <Input
+            lineHeight="3rem"
+            padding="0 1rem"
+            borderRadius="4px"
+            required
+            type="email"
+            name="email"
+            id="email"
+            onChange={handleEmailChange}
+            margin="0.5rem 0 0 0"
+          />
+          <Label margin="1rem 0 0 0" htmlFor="password" color="white">
             password
           </Label>
-          <input required type="password" name="password" id="password" onChange={handlePasswordChange} />
-          <LabeledButton size="small" variant="outlined">
-            Entrar
-          </LabeledButton>
+          <Input
+            lineHeight="3rem"
+            padding="0 1rem"
+            borderRadius="4px"
+            required
+            type="password"
+            name="password"
+            id="password"
+            onChange={handlePasswordChange}
+            margin="0.5rem 0 0 0"
+          />
+          <Button type="submit" margin="2rem 0 0 0" variant="outlined" disabled={isLoading}>
+            <Label size="medium">{isLoading ? 'Vrummm!' : 'Entrar'}</Label>
+          </Button>
         </Box>
         <Label as="h2" size="medium" color="white">
           Ou
         </Label>
         <GithubButton onClick={redirectToGithub}>Sign in with Github</GithubButton>
+        <Label as="h2" size="medium" color="white" margin="1rem 0 0 0">
+          Ou
+        </Label>
+        <Label margin="1rem 0 0 0" color="white">
+          <Link to="/sign-up">Ainda não tem cadastro? Registre-se aqui.</Link>
+        </Label>
       </Content>
     </Container>
   );
