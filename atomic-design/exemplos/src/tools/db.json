@@ -13,7 +13,7 @@
     {
       "id": "2",
       "model": "Ecto-1",
-      "price": 52,
+      "price": 52.99,
       "transmission": "Manual",
       "seats": 4,
       "fuel_efficiency": 7,

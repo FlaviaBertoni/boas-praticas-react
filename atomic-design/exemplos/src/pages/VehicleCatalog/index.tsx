@@ -7,7 +7,7 @@ import api from '../../services/api';
 interface VehiclesProps {
   id: string | number;
   model: string;
-  price: string | number;
+  price: number;
   image: string;
   fuel_efficiency: string | number;
   seats: string | number;

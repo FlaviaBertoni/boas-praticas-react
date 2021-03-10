@@ -4,10 +4,11 @@ import Image from '../../atoms/Image';
 import VehicleDetails from '../../molecules/VehicleDetails';
 import { Button, Container } from './VehicleCard.styles';
 import { useEffect, useRef, useState } from 'react';
+import Price from '../../molecules/Price';
 
 interface VehicleCardProps {
   carName: string;
-  rentPrice: string | number;
+  rentPrice: number;
   carImgPath: string;
   fuel_efficiency: string | number;
   seats: string | number;
@@ -61,15 +62,7 @@ const VehicleCard: React.FC<VehicleCardProps> = ({
           {carName}
         </Label>
         <Box margin="1.25rem 0 0 0">
-          <Label as="h2" size="large" color="dark">
-            <Label as="span" margin="0 4px 0 0" color="dark" style={{ verticalAlign: 'super' }}>
-              R$
-            </Label>
-            {rentPrice}
-            <Label as="span" color="dark">
-              /dia
-            </Label>
-          </Label>
+          <Price value={rentPrice} />
         </Box>
       </section>
       <Image width="100%" height="auto" imgPath={carImgPath} alt={`imagem de ${carName}`} margin="0.5rem 0 0 0" />

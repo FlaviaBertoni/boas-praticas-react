@@ -8,9 +8,10 @@ interface PricePros {
 
 const Price: React.FC<PricePros> = ({ value }) => {
   const [intValue, decValue] = value.toString().split('.');
+
   return (
     <Container>
-      <Label color="dark" size="small">
+      <Label as="span" margin="0 4px 0 0" color="dark" size="small">
         R$
       </Label>
       <Label color="dark" size="large" weight="bold">
