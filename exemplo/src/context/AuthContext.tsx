@@ -2,7 +2,7 @@ import { createContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import api from '../services/api';
 
-interface UserData {
+export interface UserData {
   id: number;
   name: string;
   email: string;
@@ -16,7 +16,7 @@ interface GithubUserData {
   email: string;
 }
 
-interface AuthContextProps {
+export interface AuthContextProps {
   user: UserData | null;
   signIn: (email: string, password: string) => Promise<Error | void>;
   createUser: (user: Omit<UserData, 'id'>) => Promise<Error | void>;
@@ -83,7 +83,6 @@ const AuthProvider: React.FC = ({ children }) => {
 
   async function createUser(user: Omit<UserData, 'id'>) {
     const { data: emailAlreadyExists } = await api.get<UserData[]>(`/users?email=${user.email}`);
-
     if (emailAlreadyExists.length) {
       throw Error('O email informado já está cadastrado.');
     }

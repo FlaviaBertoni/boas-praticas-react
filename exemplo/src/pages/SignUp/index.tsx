@@ -44,6 +44,7 @@ const SignUp = () => {
   const { createUser } = useAuth();
   const [isShowPassword, setIsShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<null | string>(null);
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
 
   function handleClick() {
@@ -52,11 +53,12 @@ const SignUp = () => {
 
   async function handleSignUp(event: React.MouseEvent<HTMLFormElement, MouseEvent>) {
     event.preventDefault();
+    setError(null);
     setIsLoading(true);
     try {
       await createUser(state);
     } catch (error) {
-      console.log(error.message);
+      setError(error.message);
     } finally {
       setIsLoading(false);
     }
@@ -142,8 +144,19 @@ const SignUp = () => {
             value={state.password}
           />
           <Button type="submit" margin="2rem 0 0 0" variant="outlined" disabled={isLoading}>
-            <Label size="medium">{isLoading ? 'Inciando seu sonho...' : 'Registrar'}</Label>
+            {isLoading ? (
+              <Label role="progressbar" aria-busy aria-describedby="registrando usuário" size="medium">
+                Iniciando seu sonho...
+              </Label>
+            ) : (
+              <Label size="medium">Registrar</Label>
+            )}
           </Button>
+          {!!error && (
+            <Box width="100%" justifyContent="center" margin="0.5rem 0 0 0">
+              <Label role="alert" color="black" size="small">{`Ocorreu um erro! ${error}`}</Label>
+            </Box>
+          )}
         </Box>
         <Label color="white">
           <Link to="/sign-in">Já tem cadastro? Entre aqui.</Link>

@@ -1,4 +1,4 @@
-import { render } from '../../../tools/test-utils';
+import { render, screen } from '../../../tools/test-utils';
 import Button, { ButtonVariants } from '.';
 import theme, { ThemeColorsType } from '../../../styles/theme';
 
@@ -76,5 +76,12 @@ describe('Test case for Button component', () => {
         color="white"
       />
     `);
+  });
+
+  it('should be able to click on the button and change CSS top and position property', () => {
+    render(<Button>Text</Button>);
+    const button = screen.getByRole('button');
+
+    expect(button).toHaveStyleRule('position', 'relative', { modifier: ':active' });
   });
 });

@@ -30,7 +30,7 @@ const InputWithIcon = ({
       border={border}
       borderRadius={borderRadius}
     >
-      <Input {...rest} fontSize={fontSize} padding={padding} bgColor={bgColor} />
+      <Input {...rest} fontSize={fontSize} padding={padding} bgColor={bgColor} role="textbox" />
       <button type="button" onClick={handleClick}>
         <Image imgPath={imgPath} alt="icon" width={iconWidth} />
       </button>
