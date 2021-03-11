@@ -28,6 +28,11 @@ class Wellcome extends React.Component {
 
 Para o React, estes dois componentes são equivalentes.
 
+Antes da versão 16.8 do react utillizava-se _classes_ para componentes que precisavem guardar seu estado (stateful) e _funções_ para componente que não utiliza estado (stateless)
+
+A partir da versão 16.8, com a vinda dos _Hooks_, esta separação não é mais necessária, ou seja, conseguimos criar componentes statful e stataless tanto com _classe_ quanto com _funções_.
+Hoje em dia, a recomendação é que se utilize Function Components ao invés de Class Components.
+
 ## Renderizando um Componente
 
 O exemplo assim pode ser renderizado da seguinte maneira:
@@ -56,7 +61,6 @@ A maneira de passar informações para um componente é através de suas proprie
 > **Props são somente leitura**
 >
 > Um componente nunca deve modificar seus próprios props
-
 
 ## Compondo Componentes
 
