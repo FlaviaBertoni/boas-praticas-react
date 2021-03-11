@@ -1,4 +1,4 @@
-import { render } from '../../../tools/test-utils';
+import { render, screen } from '../../../tools/test-utils';
 import Image from '.';
 
 describe('Image test cases', () => {
@@ -6,9 +6,8 @@ describe('Image test cases', () => {
     const path = 'unit-test-path';
     const { container } = render(<Image imgPath={path} alt="unit-test" />);
 
-    const img = container.getElementsByTagName('img')[0];
+    const img = screen.getByAltText('unit-test');
 
-    expect(img).toHaveAttribute('alt', 'unit-test');
     expect(img).toHaveAttribute('src', path);
 
     expect(container.firstChild).toMatchInlineSnapshot(`
