@@ -6,7 +6,7 @@
 
 Os componentes permitem que a UI seja dividida em partes independentes e reutilizáveis, ou seja, trata cada parte da aplicação como um bloco isolado, livre de outras dependências externas.
 
-## Componentes de Função e Classe
+## Class Component e Function Component
 
 A maneira mais simples de definir um componente é escrever uma função JavaScript:
 
@@ -188,7 +188,27 @@ function Comment(props) {
     </div>
   );
 }
-
 ```
 
 Com isso o componente fica com uma leitura mais simples, reutilizavel e com uma melhor manutenabilidade.
+
+### Componentes Puros
+
+O _React.PureComponent_ é similar ao _React.Component_, porém ele faz um tratamento diferente no momento da renderização do componente.
+No momento da renderização, o PureComponent faz uma chamada ao método shouldComponentUpdate() que compara os objetos (props e states) de forma superficial e só renderiza se houver alguma alteração.
+
+> **Atenção**
+>
+>O método shouldComponentUpdate() do React.PureComponent compara os objetos apenas superficialmente. Se eles contiverem estruturas de dados complexas, isto pode causar falso-negativos para diferenças mais profundas. Estenda PureComponent quando você espera possuir props e state simples
+>
+>Além disso, o método shouldComponentUpdate() do React.PureComponent pula atualizações de prop para toda a subárvore do componente. Esteja certo de que todos seus componentes que descendem dele também são “puros”.
+
+### React.Memo
+
+Como vimos na seção anterior, o PureComponent é uma extensão de classe que tem o comportamento de verificar se houve mudança no State ou Props e só atualiza o quando é identificada a alteração.
+
+Porém como este comportamento é controlado quando utilizamos Function Componente?
+
+A resposta para esta pergunta é o React.Memo!
+
+O React.Memo é um super componente que verifica se houve alteração nas Props antes de fazer a atulização do componente renderizado.
