@@ -1,14 +1,15 @@
 # boas-praticas-react
+
 Material de apoio sobre Boas Práticas na implementação de aplicações utilizando React.js e React Native
 
-### Tópicos 
+### Tópicos
 
 #### React.js
 
 - [Como se manter atualizado](#como-se-manter-atualizado)
 - [Breve história do react](/02.%20Breve%20historia%20do%20react/README.md) (o que resolve, diferenças principais das versões 15 e > 16.8 (render, classes, hooks), é uma lib)
   - [DOM e Virtual DOM](02.%20Breve%20historia%20do%20react/README.md#DOM-e-Virtual-DOM)
-  - [Componentização](02.%20Breve%20historia%20do%20react/README.md#Componentização-(organização,-reaproveitamento)) (organização, reaproveitamento)
+  - [Componentização](<02.%20Breve%20historia%20do%20react/README.md#Componentização-(organização,-reaproveitamento)>) (organização, reaproveitamento)
   - [JSX](02.%20Breve%20historia%20do%20react/README.md#JSX) - https://reactjs.org/ e https://babeljs.io/repl
 - Componentes
   - o que é um componente? tudo é componente
@@ -29,7 +30,7 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
   - CSS-in-JS
     - Styled components (vantagens, dinamico, scoped - menos change de conflito de estilo)
 - Estrutura de projetos mais populares (container, index, service)
-- [Atomic Design](/09.%20Atomic%20Design/README.md) 
+- [Atomic Design](/09.%20Atomic%20Design/README.md)
 - Testes unitários (mount (render) - react testing library, jest, enzyme, mocha)
 
 ### React Native
@@ -39,7 +40,7 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
 
 # React.js
 
-Desde as versões 0.* até a 17 tiveram diversas mudanças em como se escreve o código usando react.js que consequentemente impactaram nos padrões e boas práticas, por isso o primeiro tópico será sobre alguns links que ajudam a se manter atualizado:
+Desde as versões 0.\* até a 17 tiveram diversas mudanças em como se escreve o código usando react.js que consequentemente impactaram nos padrões e boas práticas, por isso o primeiro tópico será sobre alguns links que ajudam a se manter atualizado:
 
 ## Como se manter atualizado
 
