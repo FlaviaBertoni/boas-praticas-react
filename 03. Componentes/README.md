@@ -192,7 +192,7 @@ function Comment(props) {
 
 Com isso o componente fica com uma leitura mais simples, reutilizavel e com uma melhor manutenabilidade.
 
-### Componentes Puros
+## Componentes Puros
 
 O _React.PureComponent_ é similar ao _React.Component_, porém ele faz um tratamento diferente no momento da renderização do componente.
 No momento da renderização, o PureComponent faz uma chamada ao método shouldComponentUpdate() que compara os objetos (props e states) de forma superficial e só renderiza se houver alguma alteração.
