@@ -1,21 +1,15 @@
 import React from 'react';
-import LabeledButton from '../../components/molecules/LabeledButton';
-import Price from '../../components/molecules/Price';
+import Label from '../../components/atoms/Label';
+
+import { Container } from './styled';
 
 const Home: React.FC = () => {
   return (
-    <>
-      <Price value={52} />
-      <LabeledButton size="small" variant="text">
-        Registrar
-      </LabeledButton>
-      <LabeledButton size="small" variant="outlined">
-        Entrar
-      </LabeledButton>
-      <LabeledButton size="large" variant="contained">
-        Alugar
-      </LabeledButton>
-    </>
+    <Container>
+      <Label size="large">
+        Clique em <strong>Catálogo</strong> e selecione o veículo do seus sonhos.
+      </Label>
+    </Container>
   );
 };
 

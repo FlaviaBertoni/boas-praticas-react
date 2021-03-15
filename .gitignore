@@ -13,9 +13,11 @@ node_modules
 
 # misc
 .DS_Store
-.env*
-!.env.sample
+**/.env
+**/.env*.local
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.vscode/
