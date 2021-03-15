@@ -7,8 +7,6 @@ A maneira mais fácial e corriqueira de se alterar um elemento da página pelo j
 
 Como manipular o DOM pode ser um processo meio demorado, bibliotecas como o React, implementaram o conceito de **Virtual DOM**, que é nada mais do que a representação do **DOM** em memória. Com isso, quando alguma parte do HTML precisa ser atualizado, a biblioteca faz toda esta manipulação no Virtual DOM, compara com o DOM e só altera o estritamente necessário, economizando processamento.
 
-## <span style="color: red">Componentização (organização, reaproveitamento)</span>
-
 ## JSX
 
 O JSX é uma extensão de sintaxe para JavaScript que lembra uma linguagem de Templates, como o HTML ou XML.
