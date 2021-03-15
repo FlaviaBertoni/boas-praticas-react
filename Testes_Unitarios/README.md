@@ -130,4 +130,83 @@ it("renders three `.foo-bar`s", () => {
 
 > The more your tests resemble the way your software is used, the more confidence they can give you. [Kent C. Dodds](https://kentcdodds.com/)
 
-> Quanto mais seus testes se assemelham à forma como o software é usado, mais confiança eles podem lhe dar. Google Translate
+> Quanto mais seus testes se assemelham à forma como o software é usado, mais confiança eles podem lhe dar. [Google Translate](https://translate.google.com/?sl=en&tl=pt&text=The%20more%20your%20tests%20resemble%20the%20way%20your%20software%20is%20used%2C%20the%20more%20confidence%20they%20can%20give%20you.&op=translate)
+
+React Testing Library é uma biblioteca escrita por Kent C Dodds. Segundo o autor, o que o motivou a escrever a biblioteca foi o fato do _shallow rendering_ do Enzyme e pelo fato também do Enzyme se atentar mais aos detalhes de implementação do que no comportamento do componente durante o uso.
+
+Essa biblioteca para o React faz parte de um conjunto de bibliotecas chamado **[Testing Library](https://testing-library.com/)** que é um utilitário para testes que encoraja boas práticas de teste. Além de React, você pode encontrar para uma série de outras bibliotecas e frameworks como Angular, Vue e Cypress.
+
+Você pode confirir [neste artigo (em Inglês)](https://kentcdodds.com/blog/why-i-never-use-shallow-rendering) onde Kent explica o porquê não devemos usar shallow rendering e [neste outro aqui](https://kentcdodds.com/blog/testing-implementation-details) (também em Inglês) sobre os detalhes de implementação.
+
+Resumidamente, Kent diz que, com shallow rendering, podemos refatorar os detalhes de como implementamos um componente e os testes quebrarem (_o que não deveria, uma vez que o componente continua retornando o mesmo resultado_). E, com shallow rendering, podemos quebrar a aplicação e mesmo assim os testes continuarem passando.
+
+A grande questão do método shallow() do Enzyme é que ele não renderiza os childrens e retorna apenas o resultado que eles iriam retornar baseado nas propriedades que foram passadas para o componente no monento do teste. Não existe a execução de um ciclo de vida do componente.
+
+E não se engane! Mesmo usando o método mount() do Enzyme continuamos a testar os detalhes de implementação, o que pode gerar falso-positivo e falso-negativo em nossos testes.
+
+**Como a biblioteca RTL funciona?**
+
+O _mindset_ dessa biblioteca é de criar testes que se assemelham com o uso do usuário da apliação.
+
+O que deve acontecer quando o usuário clicar no botão? O que ele vai ver? Quais elementos estão presentes na tela?
+
+Diferentemente dos testes escritos com Enzyme, não nos preocupamos com o que está no _state_ do componente e sim com o que está presente na DOM naquele momento. E este é o motivo de não precisarmos preocupar com os detalhes de implementação durante o teste. Mesmo que internamente o componente seja alterado (caso não alterar os parametros e propriedades que o componente recebe, claro), o teste continuará passando.
+
+Ou seja, essa biblioteca é excelente para trabalharmos com TDD, onde podemos escrever os testes com os resultados esperados e depois ir construindo o componente ir vendo os testes passarem e isso é muito lindo.
+
+A RTL também sugere fortemente que devemos sempre pensar em acessibilidade e a biblioteca nos fornece uma API para buscar elementos inclusive pela _[Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)_. Existe na documentação da Testing Library [uma sessão dedicada](https://testing-library.com/docs/queries/about#priority) para explicar os métodos disponíveis pela ordem de prioridade para acessar algum componente ou fazer alguma asserção.
+
+## Além dos testes unitários
+
+Segundo a documentação oficial da biblioteca, podemos escrever além dos testes unitários, testes de integração e até mesmo testes de ponta a ponta, os famosos E2E.
+
+Podemos integrar também a bibliteca de asserção com o Cypress e usar os mesmos métodos que utilizamos nos testes unitários com os testes E2E e usando o mesmo mindset de sempre testar o que o usuário está vendo, ou o que realmente ele vai fazer e ver.
+
+![Piramide de testes](testing-pyramid.png)
+
+Essa é a famosa pirâmide de testes adaptada por Kent C. Dodds, evidenciando que, testes unitários são mais baratos e rápidos, então deveríamos gastar mais tempo nos testes unitários, certo?
+
+Segundo Dodds, faltou dizer nessa pirâmide que, quanto mais subimos, aumentamos o coeficiente de confiança para cada forma de teste
+
+Martin Fowler, termina o assunto sobre a pirâmide de testes afirmando o seguinte:
+![Nota de Martin Fowler sobre a pirâmide de testes](martin-fowler.jpeg)
+
+Agora, segundo Kent, nossas ferramentas de teste são incriveis e essa afirmação de Fowler está "menos verdadeira" e então ele mudou o conceito de pirâmide e criou o Troféu dos testes: ([Confira neste Tweet de Kent](https://twitter.com/kentcdodds/status/1141365123296051201?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1141365123296051201%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fkentcdodds.com%2Fblog%2Fwrite-tests))
+
+![Troféu dos testes](test_trophy.jpeg)
+
+De baixo para cima temos:
+
+- **Testes estáticos (Static):**
+
+  Utilizamos com ferramentas como ESLint ou com TypeScript que consegue pegar erros de Typos e regras bem mais rápido do que num Code Review. A analize é realizda enquanto estamos digitando o código.
+
+- **Testes unitários (Unit):**
+
+  Verifica se, individualmente e isoladas, as partes funcionam como esperado.
+
+- **Testes de integração (Integration):**
+
+  Verifica se as partes funcionam em harmonia quando estão juntas.
+
+- **Testes de ponta a ponta (End to End):**
+
+  Se comporta como um usuário usando a aplicação para verificar se tudo está funcionando corretamente. Tambem chamado as vezes de Teste funcional (Functional testing) ou e2e.
+
+É meus amigos e amigas, este é um assunto polêmico e controvérso, mas devemos lembrar que estamos falando de testes para o Frontend que mudou muito nos últimos anos e evoluiu bastante.
+
+Segundo o Troféu dos testes, devemos ter mais testes de integração do que unitários e isso se dá muitas vezes porque não temos como ou não vale a pena testar de forma isolada um componente de UI, como um botão ou um input estilizado, por exemplo.
+
+Pense: Não importa quantas propriedades o componente de botão ou input recebem. É bom, se for possível, testá-los isoladamente, mas testar integrados com uma página onde os botões e o input realmente serão utilizados vai nos dar muito mais confiança nos testes e quem sabe até nem precisaríamos nos preocupar com os testes unitários para esses componentes, hein?
+
+Talvez poderíamos passar mais tempo escrevendo testes de integração e criando menos mocks porque hoje eles seriam uma balança perfeita entre confiança e velocidade/custo de desenvolvimento.
+
+## Finalizando
+
+O assunto sobre testes é de fato cheio de polêmicas.
+
+A linha que divide o que é cada tipo de teste, saber o que testar, quando testar e qual ferramenta usar é muito tênue e tudo isso gera muita dúvida e muita discussão.
+
+O fato é que os testes devem nos dar **confiança** para fazermos as alterações que precisarmos em nossa aplicação e garantindo que a aplicação continuará funcionando em produção.
+
+Não há dúvidas que essa é a essência do teste de software.
