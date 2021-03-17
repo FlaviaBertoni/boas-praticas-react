@@ -23,7 +23,7 @@ function sum(value1, value2) {
 Um teste simples para essa função seria:
 
 ```js
-expect(sum(1, 2)).to.equal(3);
+expect(sum(1, 2)).toEqual(3);
 ```
 
 O exemplo acima é um clássico que você vai poder encontrar por toda internet. Mas para que serve teste unitário? Que dor que o teste resolve? O que devemos testar? Como testar?
@@ -143,7 +143,7 @@ Kent escreveu um belo artigo sobre o motivo que **[detalhes de implementação n
 
 ### Como a biblioteca RTL funciona?
 
-O _mindset_ dessa biblioteca é de criar testes que se assemelham com o comportament do usuário da apliação.
+O _mindset_ dessa biblioteca é de criar testes que se assemelham com o comportamento do usuário da apliação.
 
 O que deve acontecer quando o usuário clicar no botão? O que ele vai ver? Quais elementos estão presentes na tela?
 
@@ -178,7 +178,7 @@ De baixo para cima temos:
 
 - **Testes estáticos (Static):**
 
-  Utilizamos com ferramentas como ESLint ou com TypeScript que consegue pegar erros de Typos e regras bem mais rápido do que num Code Review. A analize é realizda enquanto estamos digitando o código.
+  Utilizamos com ferramentas como ESLint ou com TypeScript que consegue pegar erros de Typos e regras bem mais rápido do que num Code Review. A analize é realizada enquanto estamos digitando o código.
 
 - **Testes unitários (Unit):**
 
@@ -187,6 +187,8 @@ De baixo para cima temos:
 - **Testes de integração (Integration):**
 
   Verifica se as partes funcionam em harmonia quando estão juntas.
+
+  Também chamado as vezes de teste de componente.
 
 - **Testes de ponta a ponta (End to End):**
 
