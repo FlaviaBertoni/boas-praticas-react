@@ -80,17 +80,19 @@ Criada pela equipe da AirBnB que já construiu vários outros componentes para R
 
 [Na documentação oficial do Enzyme](https://enzymejs.github.io/enzyme/), diz que o Enzyme é um utilitário de testes para o React que torna fácil testar a saída de nossos componentes.
 
-A API do Enzyme é jQuery-like para localizar elementos, disparar eventos, etc.
+A API do Enzyme é jQuery-like, ou seja, imita a API do jQuery para localizar elementos, disparar eventos com métodos como `find()` e ainda pondendo buscar elementos por `id`, `name` e `className`, por exemplo.
 
 No Enzyme possuímos basicamente três métodos para renderizar um componente para o teste:
 
 - **mount()**
 
-  Renderiza toda a arvore DOM com todos os childrens e dá a possibilidade de usar toda API do Enzyme simulando cliques, acessando elementos que foram renderizados na DOM e aí por diante.
+  Renderiza toda a arvore DOM com todos os childrens e dá a possibilidade de usar toda API do Enzyme simulando cliques, acessando elementos que foram renderizados na DOM e muito mais.
 
 - **shallow()**
 
-  Renderiza somente o componente sem seus filhos e não dá a possibilidade de usar **toda** API do Enzyme, como simulação cliques.
+  Renderiza somente o componente sem seus filhos e só torna possível simular cliques e outros eventos apenas para o componente renderizado em questão, uma vez que os componentes filhos não são renderizados.
+
+  Atualmente a API de Hooks do React [não funciona muito bem com shallow rendering](https://enzymejs.github.io/enzyme/#react-hooks-support).
 
 - **render()**
 
@@ -132,27 +134,24 @@ it("renders three `.foo-bar`s", () => {
 
 > Quanto mais seus testes se assemelham à forma como o software é usado, mais confiança eles podem lhe dar. [Google Translate](https://translate.google.com/?sl=en&tl=pt&text=The%20more%20your%20tests%20resemble%20the%20way%20your%20software%20is%20used%2C%20the%20more%20confidence%20they%20can%20give%20you.&op=translate)
 
-React Testing Library é uma biblioteca escrita por Kent C Dodds. Segundo o autor, o que o motivou a escrever a biblioteca foi o fato do _shallow rendering_ do Enzyme e pelo fato também do Enzyme se atentar mais aos detalhes de implementação do que no comportamento do componente durante o uso.
-
 Essa biblioteca para o React faz parte de um conjunto de bibliotecas chamado **[Testing Library](https://testing-library.com/)** que é um utilitário para testes que encoraja boas práticas de teste. Além de React, você pode encontrar para uma série de outras bibliotecas e frameworks como Angular, Vue e Cypress.
+React Testing Library foi escrita por **[Kent C Dodds](https://kentcdodds.com/)** que tem apresentado uma outra forma de pensar em testes, principalmente para o Frontend.
 
-Você pode confirir [neste artigo (em Inglês)](https://kentcdodds.com/blog/why-i-never-use-shallow-rendering) onde Kent explica o porquê não devemos usar shallow rendering e [neste outro aqui](https://kentcdodds.com/blog/testing-implementation-details) (também em Inglês) sobre os detalhes de implementação.
+A principal ideia dessa biblioteca é que não devemos nos atentar aos detalhes de implementação durante o teste e simplesmente devemos simular o comportamento do usuário exatamente com o que será visto em tela.
 
-Resumidamente, Kent diz que, com shallow rendering, podemos refatorar os detalhes de como implementamos um componente e os testes quebrarem (_o que não deveria, uma vez que o componente continua retornando o mesmo resultado_). E, com shallow rendering, podemos quebrar a aplicação e mesmo assim os testes continuarem passando.
+Kent escreveu um belo artigo sobre o motivo que **[detalhes de implementação nos testes são uma receita para o desastre](https://kentcdodds.com/blog/testing-implementation-details)**.
 
-A grande questão do método shallow() do Enzyme é que ele não renderiza os childrens e retorna apenas o resultado que eles iriam retornar baseado nas propriedades que foram passadas para o componente no monento do teste. Não existe a execução de um ciclo de vida do componente.
+### Como a biblioteca RTL funciona?
 
-E não se engane! Mesmo usando o método mount() do Enzyme continuamos a testar os detalhes de implementação, o que pode gerar falso-positivo e falso-negativo em nossos testes.
-
-**Como a biblioteca RTL funciona?**
-
-O _mindset_ dessa biblioteca é de criar testes que se assemelham com o uso do usuário da apliação.
+O _mindset_ dessa biblioteca é de criar testes que se assemelham com o comportament do usuário da apliação.
 
 O que deve acontecer quando o usuário clicar no botão? O que ele vai ver? Quais elementos estão presentes na tela?
 
-Diferentemente dos testes escritos com Enzyme, não nos preocupamos com o que está no _state_ do componente e sim com o que está presente na DOM naquele momento. E este é o motivo de não precisarmos preocupar com os detalhes de implementação durante o teste. Mesmo que internamente o componente seja alterado (caso não alterar os parametros e propriedades que o componente recebe, claro), o teste continuará passando.
+Quando executamos o teste com essa biblioteca o componente sempre será montado com todos os seus filhos e irá se comportar exatamente como se estivesse sendo executado no browser.
 
-Ou seja, essa biblioteca é excelente para trabalharmos com TDD, onde podemos escrever os testes com os resultados esperados e depois ir construindo o componente ir vendo os testes passarem e isso é muito lindo.
+E este é o motivo de não precisarmos preocupar com os detalhes de implementação durante o teste. Mesmo que, internamente o componente seja alterado, o teste continuará passando.
+
+Um uso muito importante dessa biblioteca é de trabalharmos com TDD, onde podemos escrever os testes com os resultados esperados e depois ir construindo o componente ir vendo os testes passarem, uma vez que não precisamos nos preocupar com os detalhes da implementação da funcionalidade e isso é muito lindo.
 
 A RTL também sugere fortemente que devemos sempre pensar em acessibilidade e a biblioteca nos fornece uma API para buscar elementos inclusive pela _[Role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles)_. Existe na documentação da Testing Library [uma sessão dedicada](https://testing-library.com/docs/queries/about#priority) para explicar os métodos disponíveis pela ordem de prioridade para acessar algum componente ou fazer alguma asserção.
 
@@ -192,8 +191,6 @@ De baixo para cima temos:
 - **Testes de ponta a ponta (End to End):**
 
   Se comporta como um usuário usando a aplicação para verificar se tudo está funcionando corretamente. Tambem chamado as vezes de Teste funcional (Functional testing) ou e2e.
-
-É meus amigos e amigas, este é um assunto polêmico e controvérso, mas devemos lembrar que estamos falando de testes para o Frontend que mudou muito nos últimos anos e evoluiu bastante.
 
 Segundo o Troféu dos testes, devemos ter mais testes de integração do que unitários e isso se dá muitas vezes porque não temos como ou não vale a pena testar de forma isolada um componente de UI, como um botão ou um input estilizado, por exemplo.
 
