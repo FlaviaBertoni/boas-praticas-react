@@ -27,7 +27,7 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
 
 6. Refs (perigoso)
 
-7. [Atomic Design](/07.%20Estilos/README.md)
+7. [Estilos](/07.%20Estilos/README.md)
 
 8. Estrutura de projetos mais populares (container, index, service)
 
