@@ -27,12 +27,7 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
 
 6. Refs (perigoso)
 
-7. Estilo
-   7.1. Style inline (json) - menos performatico
-
-   - CSS (Class Name)
-   - CSS-in-JS.
-     - Styled components (vantagens, dinamico, scoped - menos change de conflito de estilo)
+7. [Atomic Design](/07.%20Estilos/README.md)
 
 8. Estrutura de projetos mais populares (container, index, service)
 
