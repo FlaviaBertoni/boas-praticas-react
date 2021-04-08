@@ -17,15 +17,15 @@ Material de apoio sobre Boas Práticas na implementação de aplicações utiliz
    3.1. [Class Component e Function Component](03.%20Componentes/README.md#Class-Component-e-Function-Component)  
    3.2. [Componentes Puros](03.%20Componentes/README.md#Componentes-Puros)
 
-4. Estado
-   4.1. Componentes stateful e stateless  
-   4.2. Estado do componente  
-   4.3. Estado da aplicação (flux, redux, effector, hooks, context)
+4. [Props](04.%20Props/readme.md)
+
+5. Estado
+   5.1. Componentes stateful e stateless  
+   5.2. Estado do componente  
+   5.3. Estado da aplicação (flux, redux, effector, hooks, context)
 
    - Hooks (useState, useEffect, exemplo de custom hook - sessão usuário)
    - Context (global)
-
-5. Props (proptypes / typescript - comunicação entre componentes - fluxo, children)
 
 6. Refs (perigoso)
 
