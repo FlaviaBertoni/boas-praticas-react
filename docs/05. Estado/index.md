@@ -47,7 +47,44 @@ class Button extends React.Component {
 
 ##### Function Component Stateless
 
+```jsx
+const Button = () => {
+  return (
+    <div>
+      <h1>Stateless Component</h1>
+      <button>
+        Click Aqui!
+      </button>
+    </div>
+  )
+}
+```
+
 ##### Function Component utilizando o Hook _useState_
+
+```jsx
+const Button = () => {
+  const [count, setCount] = useState(0)
+
+  const handleClick = () => {
+    const newCount(count + 1)
+    setCount(newCount)
+  }
+
+  return (
+    <div>
+      <h1>Stateful Component using hooks</h1>
+      <label>
+        { state.count === 0 ? 'O Botão ainda não foi clicado!' : `O botão foi clicado ${state.count}x`}
+      </label>
+      <button onClick={() => handleClick()}>
+        Click Aqui!
+      </button>
+    </div>
+  )
+}
+```
+
 ## Gerenciamento do Estado
 
 ### Estado do componente
