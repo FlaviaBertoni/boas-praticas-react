@@ -4,7 +4,8 @@ nav:
     - 01. COMO SE MANTER ATUALIZADO: 01. Como se manter atualizado/index.md
     - 02. BREVE HISTORIA DO REACT: 02. Breve historia do react/README.md
     - 03. COMPONENTES: 03. Componentes/README.md
-    - 04. ESTADO: 04. Estado/index.md
+    - 04. PROPS: 04. Props/readme.md
+    - 05. ESTADO: 05. Estado/readme.md
     - 07. ESTILOS: 07. Estilos/README.md
     - 09. ATOMIC DESIGN: 09. Atomic Design/README.md
     - 10. TESTES UNITARIOS: 10. Testes unitarios/README.md
